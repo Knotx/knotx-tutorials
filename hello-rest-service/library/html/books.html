@@ -24,29 +24,27 @@
     <script data-knotx-knots="services,handlebars"
             data-knotx-service="bookslist"
             type="text/knotx-snippet">
-      
       {{#each _result.items}}
-		<div class="col-sm-3">
+        <div class="col-sm-3">
         <div class="card">
           <img class="card-img-top"
              src="{{volumeInfo.imageLinks.thumbnail}}"
              alt="{{volumeInfo.title}}">
           <div class="card-block">
             <h4 class="card-title">{{volumeInfo.title}}</h4>
-			<p class="card-text">
-			  {{#each volumeInfo.authors as |author|}}
-				{{author}}{{#unless @last}}, {{/unless}}
-			  {{/each}}<br />
-			  Published: {{volumeInfo.publishedDate}}
-			</p>
+            <p class="card-text">
+              {{#each volumeInfo.authors as |author|}}
+                {{author}}{{#unless @last}}, {{/unless}}
+              {{/each}}<br />
+              Published: {{volumeInfo.publishedDate}}
+            </p>
           </div>
          </div>
-		 </div>
+         </div>
       {{/each}}
-	  
     </script>
-	
-	</div>
+    
+    </div>
   <hr/>
   <div class="row">
     <div class="col-sm-12">
