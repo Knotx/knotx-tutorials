@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="http://cognifide.com/favicon.ico?v=2"/>
+  <title>Knot.x</title>
+  <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+		<div class="well">
+			<p>This page presents the list of books coming from the <a href="https://www.googleapis.com/books/v1/volumes?q=java">book service</a>. It uses <a href="http://handlebarsjs.com/">Handlebars</a> template to view results from the service.
+		</div>
+		<div class="well">
+			<h1>Books:</h1>
+			<script data-knotx-knots="services,handlebars"
+				data-knotx-service="bookslist"
+				type="text/knotx-snippet">
+				
+				{{#each _result.items}}
+					<div class="panel panel-default">
+						<div class="panel-heading">{{volumeInfo.title}} {{volumeInfo.authors}}</div>
+						<div class="panel-body">{{volumeInfo.description}}</div>
+					</div>
+				{{/each}}
+			</script>
+		</div>
+		<div class="well">
+		<h4>Template</h4>
+			<pre>&lt;script data-knotx-knots="services,handlebars"
+ data-knotx-service="bookslist"
+ type="text/knotx-snippet"&gt;
+ 
+ {{#each _result.items}}
+  &lt;p&gt;{{volumeInfo.title}}&lt;/p&gt;
+ {{/each}}
+&lt;/script&gt;
+			</pre>
+			<h4>Service result<h4>
+			<pre>
+{
+ "items": [
+  {
+   "volumeInfo": {
+    "title": "Java in a Time of Revolution",
+    "authors": [
+     "Benedict Anderson"
+    ],
+    "description": "With remarkable scope and in scrupulous detail...",
+    "imageLinks": {
+     "thumbnail": "http://books.google.com/books/content?id=87totx4p3ZcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+   },
+  },
+  {
+   "volumeInfo": {
+    "title": "Java in a Nutshell",
+    "authors": [
+     "David Flanagan"
+    ],
+    "description": "Aimed for programmers, offers an introduction to Java 5.0, covering topics such as generics, enumerated type, autoboxing, and static imports.",
+    "imageLinks": {
+     "thumbnail": "http://books.google.com/books/content?id=mvzgNSmHEUAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+   }	
+  },
+  ...
+}
+			</pre>
+			<p>
+				<a class="btn btn-primary btn-large" href="http://knotx.io/documentation/hello-rest-service/">Go back to the tutorial</a>
+			</p>
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
