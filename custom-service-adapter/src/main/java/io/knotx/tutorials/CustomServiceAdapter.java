@@ -9,7 +9,7 @@ import io.vertx.core.eventbus.MessageConsumer;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
-import io.vertx.ext.jdbc.JDBCClient;
+import io.vertx.rxjava.ext.jdbc.JDBCClient;
 import io.vertx.serviceproxy.ProxyHelper;
 
 public class CustomServiceAdapter extends AbstractVerticle {
@@ -29,12 +29,13 @@ public class CustomServiceAdapter extends AbstractVerticle {
   public void start() throws Exception {
     LOGGER.info("Starting <{}>", this.getClass().getSimpleName());
 
-    final JDBCClient client = JDBCClient.createShared(vertx, configuration.getClientOptions());
+    final io.vertx.rxjava.core.Vertx rxVertx = new io.vertx.rxjava.core.Vertx(this.vertx);
+    final JDBCClient client = JDBCClient.createShared(rxVertx, configuration.getClientOptions());
 
     //register the service proxy on event bus
     consumer = ProxyHelper
-        .registerService(AdapterProxy.class, vertx,
-            new CustomServiceAdapterProxyImpl(new io.vertx.rxjava.core.Vertx(vertx), client),
+        .registerService(AdapterProxy.class, this.vertx,
+            new CustomServiceAdapterProxyImpl(client),
             configuration.getAddress());
   }
 

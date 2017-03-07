@@ -1,6 +1,5 @@
 package io.knotx.tutorials.impl;
 
-import com.google.common.collect.ImmutableList;
 import io.knotx.adapter.AbstractAdapterProxy;
 import io.knotx.dataobjects.AdapterRequest;
 import io.knotx.dataobjects.AdapterResponse;
@@ -10,58 +9,45 @@ import io.vertx.core.buffer.Buffer;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
-import io.vertx.ext.jdbc.JDBCClient;
-import io.vertx.ext.sql.SQLConnection;
-import io.vertx.rxjava.core.Vertx;
-import java.util.HashMap;
-import java.util.Map;
+import io.vertx.rxjava.ext.jdbc.JDBCClient;
 import rx.Observable;
 
 public class CustomServiceAdapterProxyImpl extends AbstractAdapterProxy {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(CustomServiceAdapter.class);
+  private final JDBCClient client;
 
-  private final Vertx vertx;
-  private JDBCClient client;
-
-  public CustomServiceAdapterProxyImpl(Vertx vertx, JDBCClient client) {
-    this.vertx = vertx;
+  public CustomServiceAdapterProxyImpl(JDBCClient client) {
     this.client = client;
   }
 
   @Override
   protected Observable<AdapterResponse> processRequest(AdapterRequest adapterRequest) {
-    client.getConnection(conn -> {
-      if (conn.failed()) {
-        System.err.println(conn.cause().getMessage());
-        return;
-      }
-
-      final SQLConnection connection = conn.result();
-      connection.query("select * from books", rs -> {
-        for (JsonArray line : rs.result().getResults()) {
-          LOGGER.info(line.encode());
-        }
-
-        // and close the connection
-        connection.close(done -> {
-          if (done.failed()) {
-            throw new RuntimeException(done.cause());
-          }
-        });
-      });
-    });
-
-    final Map<String, Object> map = new HashMap<>();
-    map.put("title", "Java");
-    map.put("books", ImmutableList.of("Book1", "Book2", "XYZ321"));
-
-    final ClientResponse clientResponse = new ClientResponse();
-    clientResponse
-        .setBody(Buffer.buffer("{\"title\": \"Java Books\",\"books\": [\"A1\",\"A2\",\"C3\"]}"));
-    final AdapterResponse adapterResponse = new AdapterResponse();
-    adapterResponse.setResponse(clientResponse);
-    return Observable.just(adapterResponse);
+    return client.getConnectionObservable()
+        .flatMap(
+            sqlConnection -> sqlConnection
+                .queryObservable("select * from books")
+                .doOnNext(rs -> {
+                      for (JsonArray line : rs.getResults()) {
+                        LOGGER.info("LINE: {}", line.encode());
+                      }
+                    }
+                )
+        )
+        .map(rs -> new JsonArray(rs.getResults()))
+        .map(body -> {
+          final ClientResponse clientResponse = new ClientResponse();
+          clientResponse.setBody(Buffer.buffer(body.encode()));
+          return clientResponse;
+        })
+        .doOnNext(response -> LOGGER.info("client response: {}", response))
+        .map(clientResponse -> {
+          final AdapterResponse adapterResponse = new AdapterResponse();
+          adapterResponse.setResponse(clientResponse);
+          adapterResponse.setSignal("next");
+          return adapterResponse;
+        })
+        .doOnNext(response -> LOGGER.info("adapter response: {}", response));
   }
 
 }

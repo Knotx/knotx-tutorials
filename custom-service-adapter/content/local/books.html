@@ -24,15 +24,15 @@
     <script data-knotx-knots="services,handlebars"
             data-knotx-service="booksdata"
             type="text/knotx-snippet">
-            <h1>{{_result.title}}</h1>
-            {{#each _result.books}}
+            {{#each _result}}
               <div class="card">
                 {{this}}
                </div>
             {{/each}}
+
     </script>
 
-    </div>
+  </div>
   <hr/>
   <div class="row">
     <div class="col-sm-12">
