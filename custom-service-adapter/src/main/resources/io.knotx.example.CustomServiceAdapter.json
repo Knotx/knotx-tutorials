@@ -4,7 +4,8 @@
     "config": {
       "address": "knotx.adapter.service.custom",
       "clientOptions": {
-        "logActivity": true
+        "url": "jdbc:hsqldb:hsql://localhost:9001/",
+        "driver_class": "org.hsqldb.jdbcDriver"
       }
     }
   }
