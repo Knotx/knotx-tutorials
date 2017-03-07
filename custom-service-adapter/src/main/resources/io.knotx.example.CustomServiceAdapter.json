@@ -1,0 +1,11 @@
+{
+  "main": "io.knotx.tutorials.CustomServiceAdapter",
+  "options": {
+    "config": {
+      "address": "knotx.adapter.service.custom",
+      "clientOptions": {
+        "logActivity": true
+      }
+    }
+  }
+}

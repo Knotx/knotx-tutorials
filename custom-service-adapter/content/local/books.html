@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knot.x</title>
+  <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Books list</div>
+        <div class="panel-body">
+          This page lists books from the database.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <script data-knotx-knots="services,handlebars"
+            data-knotx-service="booksdata"
+            type="text/knotx-snippet">
+            <h1>{{_result.title}}</h1>
+            {{#each _result.books}}
+              <div class="card">
+                {{this}}
+               </div>
+            {{/each}}
+    </script>
+
+    </div>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        XYZ123
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
