@@ -4,7 +4,7 @@ import io.knotx.adapter.AbstractAdapterProxy;
 import io.knotx.dataobjects.AdapterRequest;
 import io.knotx.dataobjects.AdapterResponse;
 import io.knotx.dataobjects.ClientResponse;
-import io.knotx.tutorials.CustomServiceAdapter;
+import io.knotx.tutorials.BooksDbAdapter;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.logging.Logger;
@@ -12,12 +12,12 @@ import io.vertx.core.logging.LoggerFactory;
 import io.vertx.rxjava.ext.jdbc.JDBCClient;
 import rx.Observable;
 
-public class CustomServiceAdapterProxyImpl extends AbstractAdapterProxy {
+public class BooksDbAdapterProxyImpl extends AbstractAdapterProxy {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(CustomServiceAdapter.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(BooksDbAdapter.class);
   private final JDBCClient client;
 
-  public CustomServiceAdapterProxyImpl(JDBCClient client) {
+  public BooksDbAdapterProxyImpl(JDBCClient client) {
     this.client = client;
   }
 

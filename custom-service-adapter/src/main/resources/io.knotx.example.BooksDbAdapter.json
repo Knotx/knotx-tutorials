@@ -1,5 +1,5 @@
 {
-  "main": "io.knotx.tutorials.CustomServiceAdapter",
+  "main": "io.knotx.tutorials.BooksDbAdapter",
   "options": {
     "config": {
       "address": "knotx.adapter.service.custom",

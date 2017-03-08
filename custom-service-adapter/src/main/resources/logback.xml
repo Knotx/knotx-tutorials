@@ -30,7 +30,7 @@
     <appender-ref ref="STDOUT"/>
   </logger>
 
-  <logger name="io.knotx.adapter.service.http" level="INFO" additivity="false">
+  <logger name="io.knotx.tutorials" level="INFO" additivity="false">
     <appender-ref ref="STDOUT"/>
   </logger>
 
