@@ -1,7 +1,7 @@
 # Custom Service Adatper with Knot.x
 
 In this tutorial we create a page: [http://localhost:8092/content/local/books.html](http://localhost:8092/content/local/books.html) 
-displaying books that are available in SQL database.
+displaying books and authors that are available in SQL database.
 
 Database access is not available via WebAPI thus we have 2 options:
 
@@ -20,5 +20,6 @@ To run this tutorial you will need Java 8 and Maven installed.
 1. Download [`knotx-standalone-1.0.0.fat.jar`](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.0/knotx-standalone-1.0.0.fat.jar)
 to `app` folder in this tutorial root.
 2. Build custom service adapter using `mvn clean install` command.
-3. Copy `custom-service-adapter-1.0.0-fat.jar` to `app` folder.
+3. Copy `custom-service-adapter-1.0.0-fat.jar` (from `target` folder after successful maven build) 
+to `app` folder.
 4. Use `run.sh` to start Knot.x instance with custom adapter.
