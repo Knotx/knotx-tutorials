@@ -19,6 +19,13 @@
               "params": {
                 "query": "SELECT * FROM books"
               }
+            },
+            {
+              "name": "authors-listing",
+              "address": "knotx.adapter.service.custom",
+              "params": {
+                "query": "SELECT * FROM authors"
+              }
             }
           ]
         }

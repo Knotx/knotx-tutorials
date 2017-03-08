@@ -14,7 +14,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Books list</div>
         <div class="panel-body">
-          This page lists books from the database.
+          This section lists books from the database.
         </div>
       </div>
     </div>
@@ -42,11 +42,42 @@
     </script>
 
   </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Authors list</div>
+        <div class="panel-body">
+          This section lists authors from the database.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <script data-knotx-knots="services,handlebars"
+            data-knotx-service="authors-listing"
+            type="text/knotx-snippet">
+            {{#each _result}}
+
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-block">
+                    <h2 class="card-title">{{this.NAME}}</h2>
+                    <h4 class="card-title">{{this.AGE}}</h4>
+                  </div>
+                </div>
+              </div>
+
+            {{/each}}
+    </script>
+
+  </div>
   <hr/>
   <div class="row">
     <div class="col-sm-12">
       <a class="btn btn-primary btn-large"
-         href="http://knotx.io/documentation/custom-service-adapter/">Go back to the tutorial</a>
+         href="http://knotx.io/blog/custom-service-adapter/">Go back to the tutorial</a>
     </div>
   </div>
 </div>

@@ -29,6 +29,7 @@ public class BooksDbAdapterProxyImpl extends AbstractAdapterProxy {
         .flatMap(
             sqlConnection -> sqlConnection.queryObservable(query)
         )
+        .doOnNext(rs -> rs.getRows().forEach(LOGGER::info))
         .map(this::toAdapterResponse);
   }
 
