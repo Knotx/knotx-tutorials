@@ -15,7 +15,7 @@ Follow [this tutorial](http://o7planning.org/en/10287/installing-and-configuring
 in order to set up the database.
 To create tables with data use the script provided in `db` folder of this tutorial.
 
-To run this tutorial you will need java 8 and maven installed.
+To run this tutorial you will need Java 8 and Maven installed.
 
 1. Download [`knotx-standalone-1.0.0.fat.jar`](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.0/knotx-standalone-1.0.0.fat.jar)
 to `app` folder in this tutorial root.

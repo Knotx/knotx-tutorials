@@ -22,14 +22,23 @@
   <div class="row">
 
     <script data-knotx-knots="services,handlebars"
-            data-knotx-service="booksdata"
+            data-knotx-service="books-listing"
             type="text/knotx-snippet">
             {{#each _result}}
-              <div class="card">
-                {{this}}
-               </div>
-            {{/each}}
 
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-block">
+                    <h2 class="card-title">{{this.TITLE}}</h2>
+                    <h4 class="card-title">{{this.ISBN}}</h4>
+                    <p class="card-text">
+                      {{this.SYNOPSIS}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            {{/each}}
     </script>
 
   </div>

@@ -14,9 +14,11 @@
         "config": {
           "services": [
             {
-              "name": "booksdata",
+              "name": "books-listing",
               "address": "knotx.adapter.service.custom",
-              "params": {}
+              "params": {
+                "query": "SELECT * FROM books"
+              }
             }
           ]
         }
