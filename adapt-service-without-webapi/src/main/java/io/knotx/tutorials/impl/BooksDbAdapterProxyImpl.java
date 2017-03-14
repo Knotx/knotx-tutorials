@@ -38,7 +38,6 @@ public class BooksDbAdapterProxyImpl extends AbstractAdapterProxy {
     final ClientResponse clientResponse = new ClientResponse();
     clientResponse.setBody(Buffer.buffer(new JsonArray(rs.getRows()).encode()));
     adapterResponse.setResponse(clientResponse);
-    adapterResponse.setSignal("next");
     return adapterResponse;
   }
 
