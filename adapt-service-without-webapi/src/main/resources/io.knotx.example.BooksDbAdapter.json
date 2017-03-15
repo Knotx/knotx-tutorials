@@ -2,7 +2,7 @@
   "main": "io.knotx.tutorials.BooksDbAdapter",
   "options": {
     "config": {
-      "address": "knotx.adapter.service.custom",
+      "address": "knotx.adapter.service.booksdb",
       "clientOptions": {
         "url": "jdbc:hsqldb:hsql://localhost:9001/",
         "driver_class": "org.hsqldb.jdbcDriver"

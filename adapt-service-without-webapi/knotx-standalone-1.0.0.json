@@ -15,14 +15,14 @@
           "services": [
             {
               "name": "books-listing",
-              "address": "knotx.adapter.service.custom",
+              "address": "knotx.adapter.service.booksdb",
               "params": {
                 "query": "SELECT * FROM books"
               }
             },
             {
               "name": "authors-listing",
-              "address": "knotx.adapter.service.custom",
+              "address": "knotx.adapter.service.booksdb",
               "params": {
                 "query": "SELECT * FROM authors"
               }

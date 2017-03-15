@@ -1,13 +1,12 @@
-# Custom Service Adatper with Knot.x
+# Adapt service without Web API
 
 In this tutorial we create a page: [http://localhost:8092/content/local/books.html](http://localhost:8092/content/local/books.html) 
-displaying books and authors that are available in SQL database.
+displaying books and authors that are available in a relational database.
 
 Database access is not available via WebAPI thus we have 2 options:
 
-1. Implement WebAPI layer to access database and then integrate with it using e.g. AJAX or HTTP adapter.
-2. Or implement simple [Knot.x Service Adapter](https://github.com/Cognifide/knotx/wiki/ServiceAdapter)
-
+1. Implement a Web API layer to access the database and then integrate with it using e.g. AJAX or an [HTTP adapter](http://knotx.io/blog/hello-rest-service/).
+2. Implement a _Knot.x_ [_Service Adapter_](https://github.com/Cognifide/knotx/wiki/ServiceAdapter).
 
 For the demonstration purposes we're going to use HSQL database in this example.
 
