@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knot.x</title>
+  <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Books list</div>
+        <div class="panel-body">
+          This section lists books from the database.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <script data-knotx-knots="services,handlebars"
+            data-knotx-service="books-listing"
+            type="text/knotx-snippet">
+            {{#each _result}}
+
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-block">
+                    <h2 class="card-title">{{this.TITLE}}</h2>
+                    <h4 class="card-title">{{this.ISBN}}</h4>
+                    <p class="card-text">
+                      {{this.SYNOPSIS}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            {{/each}}
+    </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Authors list</div>
+        <div class="panel-body">
+          This section lists authors from the database.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <script data-knotx-knots="services,handlebars"
+            data-knotx-service="authors-listing"
+            type="text/knotx-snippet">
+            {{#each _result}}
+
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-block">
+                    <h2 class="card-title">{{this.NAME}}</h2>
+                    <h4 class="card-title">{{this.AGE}}</h4>
+                  </div>
+                </div>
+              </div>
+
+            {{/each}}
+    </script>
+
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-12">
+      <a class="btn btn-primary btn-large"
+         href="http://knotx.io/blog/custom-service-adapter/">Go back to the tutorial</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
