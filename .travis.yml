@@ -2,7 +2,8 @@ sudo: false
 language: java
 install: true
 jdk: oraclejdk8
-script: mvn verify
+script: 
+  - mvn -q -B -f adapt-service-without-webapi/pom.xml verify
 cache:
   directories:
     - $HOME/.m2
