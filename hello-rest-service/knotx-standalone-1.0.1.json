@@ -19,20 +19,7 @@
               "path": "/html/.*",
               "address": "knotx.core.repository.filesystem"
             }
-          ],
-          "routing": {
-            "GET": [
-              {
-                "path": "/html/.*",
-                "address": "knotx.knot.service",
-                "onTransition": {
-                  "next": {
-                    "address": "knotx.knot.handlebars"
-                  }
-                }
-              }
-            ]
-          }
+          ]
         }
       }
     },
