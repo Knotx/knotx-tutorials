@@ -1,6 +1,9 @@
 # GeeCON 2017 demo. 
 
-Configuration comes from tutorial [Hello REST service](http://knotx.io/blog/hello-rest-service/). 
+This demo etends [Hello REST service](http://knotx.io/blog/hello-rest-service/) tutorial with
+cluster mode aspects.
+
+Before next steps download Knot.x fat jar and place in apps folder in both `instance-1` and `instance-2` catalogue: https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar
 
 #### 1. Run instance 1 with cluster mode:
 ```
