@@ -1,10 +1,18 @@
 # GeeCON 2017 demo
 
+<p align="center">
+  <img src="https://github.com/Cognifide/knotx/blob/master/icons/180x180.png?raw=true" alt="Knot.x Logo"/>
+</p>
+
 ## Knot.x as a tool - simple REST integration
+
+This demo extends [Hello REST service](http://knotx.io/blog/hello-rest-service/) tutorial with cluster mode aspects.
 
 ### Mocked data version
 
-This demo extends [Hello REST service](http://knotx.io/blog/hello-rest-service/) tutorial with cluster mode aspects.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-1.png" alt="Mocked"/>
+</p>
 
 Before the next steps download [Knot.x standalone fat jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar)
  and place it in the `app` folder under both `instance-1` and `instance-2` directories.
@@ -40,7 +48,7 @@ You should see the console log that lists used Knot.x Core Modules:
 ```
 
 
-##### 4. Enter [Books Page](http://localhost:8092/html/books.html?q=java)
+##### 4. Enter [Books Page](http://localhost:8092/service/books.html)
 See console log:
 ```
 2017-05-17 19:56:22 [vert.x-eventloop-thread-0] DEBUG i.k.k.service.impl.FragmentProcessor - Fetching data from service knotx.adapter.service.http {"path":"/books/v1/volumes?q=java"}
@@ -60,6 +68,10 @@ Notice the configuration that points to service `"bookslist"`:
 
 ### GoogleAPI data version
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-2.png" alt="Google API"/>
+</p>
+
 ##### 1. Open [Google Books API](https://www.googleapis.com/books/v1/volumes?q=java)
 
 ##### 2. Run `instance-1` in *cluster* mode:
@@ -74,6 +86,10 @@ See the console log and try also with other queries:
     - [Reactive](http://localhost:8092/service/books.html?q=reactive)
 
 ### Cluster mode - scale the most used part of the system - `Search`
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-3.png" alt="Cluster"/>
+</p>
 
 ##### 1. Start the second instance of Knot.x application:
 ```
@@ -101,6 +117,10 @@ See the console log and try also with other queries:
 ## Knot.x as an integration layer
 
 ### DB
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-4.png" alt="DB Integration"/>
+</p>
 
 Before the next steps checkout and build [Adapt Service Without Web API](https://github.com/Knotx/knotx-tutorials/tree/master/adapt-service-without-webapi)
 using Maven. Place the `custom-service-adapter-1.0.1-fat.jar` it in the `instance-2/app` folder.
