@@ -1,17 +1,32 @@
-# GeeCON 2017 demo. 
+# GeeCON 2017 demo
 
-This demo etends [Hello REST service](http://knotx.io/blog/hello-rest-service/) tutorial with
-cluster mode aspects.
+## Knot.x as a tool - simple REST integration
 
-Before next steps download Knot.x fat jar and place in apps folder in both `instance-1` and `instance-2` catalogue: https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar
+### Mocked data version
 
-#### 1. Run instance 1 with cluster mode:
+This demo extends [Hello REST service](http://knotx.io/blog/hello-rest-service/) tutorial with cluster mode aspects.
+
+Before the next steps download [Knot.x standalone fat jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar)
+ and place it in the `app` folder under both `instance-1` and `instance-2` directories.
+
+Next download [Knot.x mocks module](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-mocks/1.0.1/knotx-mocks-1.0.1.fat.jar)
+and place it in the `mocks/app` folder.
+
+##### 1. Run mocks:
+```
+$ cd mocks
+$ java -Dlogback.configurationFile=knotx-mocks-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocks-1.0.1.json
+```
+
+##### 2. Enter [http://localhost:3000/mock/service/books.json](http://localhost:3000/mock/service/books.json).
+
+##### 3. Run `instance-1` with mock-config:
 ```
 $ cd instance-1
-$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json -cluster
+$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocked-1.0.1.json
 ```
 
-Console log:
+You should see the console log that lists used Knot.x Core Modules:
 ```
                 Deployed 6497dd7d-d8a1-4ab4-995f-2cf42f897c0c [knotx:io.knotx.ServiceKnot]
                 Deployed c8e6f66a-5887-4796-ad6b-3de9d02ca810 [knotx:io.knotx.ActionKnot]
@@ -22,63 +37,87 @@ Console log:
                 Deployed 4e43d285-0557-41ea-bacb-db288fc78366 [knotx:io.knotx.HttpServiceAdapter]
                 Deployed 048fae38-7633-4c02-b4fb-a9f045352143 [knotx:io.knotx.KnotxServer]
                 Deployed a4589518-3b0e-405a-a024-7c8556727288 [knotx:io.knotx.HandlebarsKnot]
-...       
-Members [1] {
-        Member [192.168.56.1]:5701 this
-}
 ```
 
-#### 2. Open [Books Page](http://localhost:8092/service/books.html?q=java).
 
-Console log:
+##### 4. Enter [Books Page](http://localhost:8092/html/books.html?q=java)
+See console log:
 ```
 2017-05-17 19:56:22 [vert.x-eventloop-thread-0] DEBUG i.k.k.service.impl.FragmentProcessor - Fetching data from service knotx.adapter.service.http {"path":"/books/v1/volumes?q=java"}
 ```
 
+##### 5. Open [Books Page CMS Template](https://github.com/Knotx/knotx-tutorials/blob/feature/geecon-demo/conferences/geecon2017/instance-1/library/service/books.html#L25)
+Notice the configuration that points to service `"bookslist"`:
+```
+<script data-knotx-knots="services,handlebars"
+        data-knotx-service="bookslist"
+        type="text/knotx-snippet">
+```
 
-#### 3. Let's see our [external service](https://www.googleapis.com/books/v1/volumes?q=java)
+##### 6. Shut down the `instance-1` (by `^C`).
 
-JSON service call result.
+---
 
-#### 4. Open [books.html](https://github.com/Knotx/knotx-tutorials/blob/master/conferences/geecon2017/instance-1/library/html/books.html) with template.
+### GoogleAPI data version
 
-HTML markup with "shaped" books.
+##### 1. Open [Google Books API](https://www.googleapis.com/books/v1/volumes?q=java)
 
-#### 5. Start second instance of Knot.x application:
+##### 2. Run `instance-1` in *cluster* mode:
+```
+$ cd instance-1
+$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json
+```
+
+##### 3. Open [Books Page](http://localhost:8092/service/books.html?q=java)
+See the console log and try also with other queries:
+    - [Vert.x](http://localhost:8092/service/books.html?q=vertx)
+    - [Reactive](http://localhost:8092/service/books.html?q=reactive)
+
+### Cluster mode - scale the most used part of the system - `Search`
+
+##### 1. Start the second instance of Knot.x application:
 ```
 $ cd instance-2
 $ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json -cluster
 ```
 
-Console log:
-```
-                Deployed e25c5446-0a19-4b76-87c3-cc1cec07e869 [knotx:io.knotx.ServiceKnot]
-                Deployed e900595f-2522-4279-82c8-a49b304c1895 [knotx:io.knotx.HttpServiceAdapter]
-...                
-Members [2] {
-        Member [192.168.56.1]:5701
-        Member [192.168.56.1]:5702 this
-}
-```
+See the console log and see that clustering works:
+ ```
+                 Deployed e25c5446-0a19-4b76-87c3-cc1cec07e869 [knotx:io.knotx.ServiceKnot]
+                 Deployed e900595f-2522-4279-82c8-a49b304c1895 [knotx:io.knotx.HttpServiceAdapter]
+ ...
+ Members [2] {
+         Member [192.168.56.1]:5701
+         Member [192.168.56.1]:5702 this
+ }
+ ```
 
-#### 6. Refresh a few times [Books Page](http://localhost:8092/html/books.html).
-
-Console log (instance-2):
-```
-2017-05-17 20:30:33 [vert.x-eventloop-thread-2] DEBUG i.k.k.service.impl.FragmentProcessor - Fetching data from service knotx.adapter.service.http {"path":"/books/v1/volumes?q=java"}
-```
-
-This is internal LB.
+##### 2. Open [Books Page](http://localhost:8092/service/books.html?q=java) and look how **Load Balancing** works:
+See the console log and try also with other queries:
+    - [Vert.x](http://localhost:8092/service/books.html?q=vertx)
+    - [Reactive](http://localhost:8092/service/books.html?q=reactive)
 
 
-#### To run instance with mocked service:
-1. Run mocks:
+## Knot.x as an integration layer
+
+### DB
+
+Before the next steps checkout and build [Adapt Service Without Web API](https://github.com/Knotx/knotx-tutorials/tree/master/adapt-service-without-webapi)
+using Maven. Place the `custom-service-adapter-1.0.1-fat.jar` it in the `instance-2/app` folder.
+
+##### 1. Run `instance-3` with `BooksDbAdapter` in cluster mode (assuming `instance-1` and `instance-2` are still running):
+
 ```
-$ cd mocks
-$ java -Dlogback.configurationFile=knotx-mocks-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocks-1.0.1.json
+$ cd instance-3
+$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json -cluster
 ```
 
-2. Run `instance-1` with command
-```
-$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocked-1.0.1.json
-```
+##### 2. Open [DB Books Page](http://localhost:8092/db/books.html).
+
+##### 3. Add a record to Books DB (e.g. new author or a book).
+
+##### 4. Refresh [DB Books Page](http://localhost:8092/db/books.html).
+
+##### 5. See how [`BooksDbAdapter`]() and [`BooksDbAdapterProxyImpl`]() works.
+
+##### 6. See the `knotx-standalone-1.0.1.json` config file in the `instance-3` <- connection is defined there.
