@@ -46,5 +46,5 @@ GRANT DBA TO SA
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
 SET SCHEMA PUBLIC
-INSERT INTO BOOKS VALUES(1,'RxJava Essentials','9781784393571','https://developers.redhat.com/sites/default/files/2017-04/reactivemicroservices_solp_270px.png', 'If you are an experienced Java developer, reactive programming will give you a new way to approach scalability and concurrency in your backend systems, without forcing you to switch programming languages.')
-INSERT INTO AUTHORS VALUES (1, 'Ivan Morgillo', 58)
+INSERT INTO BOOKS VALUES(1,'Building Reactive Microservices in Java','9781784393571','https://developers.redhat.com/sites/default/files/2017-04/reactivemicroservices_solp_270px.png', 'Investigating distributed microservices? Want to get rid of your monolithic enterprise applications or not create new ones? Reactive design can help. Author and Red Hatter, Clement Escoffier, explains why and how Eclipse Vert.x is a good choice to build effective microservices systems.')
+INSERT INTO AUTHORS VALUES (1, 'Clement Escoffier', 40)
