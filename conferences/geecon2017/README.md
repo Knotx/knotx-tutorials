@@ -69,3 +69,16 @@ Console log (instance-2):
 ```
 
 This is internal LB.
+
+
+#### To run instance with mocked service:
+1. Run mocks:
+```
+$ cd mocks
+$ java -Dlogback.configurationFile=knotx-mocks-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocks-1.0.1.json
+```
+
+2. Run `instance-1` with command
+```
+$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocked-1.0.1.json
+```

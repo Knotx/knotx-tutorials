@@ -1,0 +1,789 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 593,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "gJEC2q7DzpQC",
+   "etag": "7LAZas07aeg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gJEC2q7DzpQC",
+   "volumeInfo": {
+    "title": "The History of Java",
+    "authors": [
+     "Sir Thomas Stamford Raffles"
+    ],
+    "publishedDate": "1830",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "HARVARD:32044021066998"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 868,
+    "printType": "BOOK",
+    "categories": [
+     "Java (Indonesia)"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.3.0.full.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=gJEC2q7DzpQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=gJEC2q7DzpQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=gJEC2q7DzpQC&printsec=frontcover&dq=java&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=gJEC2q7DzpQC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-gJEC2q7DzpQC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FREE",
+    "isEbook": true,
+    "buyLink": "https://play.google.com/store/books/details?id=gJEC2q7DzpQC&rdid=book-gJEC2q7DzpQC&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": true,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.pl/books/download/The_History_of_Java.epub?id=gJEC2q7DzpQC&hl=&output=epub&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.pl/books/download/The_History_of_Java.pdf?id=gJEC2q7DzpQC&hl=&output=pdf&sig=ACfU3U1FeZs0WwTQ2Z_X_IqhvzCelUN01A&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=gJEC2q7DzpQC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Ql6QgWf6i7cC",
+   "etag": "wGsE2DO3g70",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Ql6QgWf6i7cC",
+   "volumeInfo": {
+    "title": "Thinking in Java",
+    "authors": [
+     "Bruce Eckel"
+    ],
+    "publisher": "Prentice Hall Professional",
+    "publishedDate": "2003",
+    "description": "An overview of the programming language's fundamentals covers syntax, initialization, implementation, classes, error handling, objects, applets, multiple threads, projects, and network programming.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0131002872"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780131002876"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 1119,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 32,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.2.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Ql6QgWf6i7cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Ql6QgWf6i7cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=Ql6QgWf6i7cC&printsec=frontcover&dq=java&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=Ql6QgWf6i7cC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Thinking_in_Java.html?hl=&id=Ql6QgWf6i7cC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Ql6QgWf6i7cC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Bruce Eckel&#39;s &quot;Thinking in Java— demonstrates advanced topics.Explains sound object-oriented principles as they apply to Java.Hands-on Java CD available online, with 15 hours of lectures and slides by Bruce Eckel.Live seminars, consulting ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UEdjAgAAQBAJ",
+   "etag": "ZLEbXS1EXJY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UEdjAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Java. Podstawy. Wydanie IX",
+    "authors": [
+     "Cay S. Horstmann",
+     "Gary Cornell"
+    ],
+    "publisher": "Helion",
+    "publishedDate": "2013-12-09",
+    "description": "Kolejne wydanie tej cenionej książki zostało zaktualizowane o wszystkie nowości, które pojawiły się w wersji 7 platformy Java Standard Edition. W trakcie lektury poznasz składnię języka oraz wszystkie istotne kwestie związane z programowaniem w Javie. Zrozumiesz założenia programowania obiektowego, nauczysz się korzystać z interfejsów oraz obsługiwać wyjątki. Przekonasz się również, jakie ułatwienia w tym zakresie oferuje Java 7 obsługa wielu wyjątków w ramach jednego bloku catch to tylko czubek góry lodowej.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788324677610"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8324677615"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 864,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.5.4.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=UEdjAgAAQBAJ&pg=PA852&dq=java&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-UEdjAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 79.0,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 55.3,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&rdid=book-UEdjAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 7.9E7,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 5.53E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-epub.acsm?id=UEdjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-pdf.acsm?id=UEdjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UEdjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "jogging.properties, 594 LinkedListTest.\u003cb\u003ejava\u003c/b\u003e, 681 LoggingImageViewer.\u003cb\u003ejava\u003c/b\u003e, 602 \u003cbr\u003e\nLotteryArray.\u003cb\u003ejava\u003c/b\u003e, 128 LotteryDrawing.\u003cb\u003ejava\u003c/b\u003e, 121 LotteryOdds.\u003cb\u003ejava\u003c/b\u003e, 108 Manager.\u003cbr\u003e\n\u003cb\u003ejava\u003c/b\u003e, 206, 232 ManagerTest.\u003cb\u003ejava\u003c/b\u003e, 204 MANIFEST.MF, 512 manifestu klasa&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "mVNjAgAAQBAJ",
+   "etag": "T7qSRyMXHa8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/mVNjAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Java. Techniki zaawansowane. Wydanie IX",
+    "authors": [
+     "Cay S. Horstmann",
+     "Gary Cornell"
+    ],
+    "publisher": "Helion",
+    "publishedDate": "2013-12-09",
+    "description": "Dziewiąte wydanie bestsellerowej pozycji Java. Techniki zaawansowane zostało zaktualizowane i uzupełnione o nowinki z najnowszej wersji języka Java oznaczonej numerem 7. W trakcie lektury dowiesz się, jak wydajnie korzystać ze strumieni, wyrażeń regularnych oraz baz danych. Java 7 to całkowicie nowy, mocno rozbudowany dostęp do plików opis wszystkich niuansów znajdziesz w tej publikacji. Co jeszcze? Tworzenie aplikacji dla różnych języków i lokalizacji, zaawansowane wykorzystanie biblioteki Swing oraz dystrybucja stworzonych aplikacji. To tylko niektóre z zagadnień poruszonych w tej wyjątkowej książce, która musi się znaleźć na półce każdego programisty języka Java.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788324677658"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8324677658"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 992,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.4.3.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=mVNjAgAAQBAJ&pg=PA287&dq=java&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-mVNjAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 119.0,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 83.3,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&rdid=book-mVNjAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.19E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 8.33E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-epub.acsm?id=mVNjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-pdf.acsm?id=mVNjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=mVNjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Zaawansowane typy języka SQL W tabeli 4.9 przedstawione zostały typy języka \u003cbr\u003e\nSQL obsługiwane w standardzie JDBC oraz ich odpowiedniki w języku \u003cb\u003eJava\u003c/b\u003e. \u003cbr\u003e\nTabela 4.9. Typy danych języka SQL i odpowiadające im typy języka \u003cb\u003eJava\u003c/b\u003e Typ&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "T-Z8HKgIi5EC",
+   "etag": "7pw6I0pbrKM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/T-Z8HKgIi5EC",
+   "volumeInfo": {
+    "title": "Back Door Java",
+    "subtitle": "State Formation and the Domestic in Working Class Java",
+    "authors": [
+     "Janice C. Newberry"
+    ],
+    "publisher": "University of Toronto Press",
+    "publishedDate": "2006",
+    "description": "\"An important contribution to studies of gender and the state in Southeast Asia, this eminently readable book is at once engaging and profound.\" - Mary Steedly, Harvard University",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1551116898"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781551116891"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 200,
+    "printType": "BOOK",
+    "categories": [
+     "Social Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=T-Z8HKgIi5EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=T-Z8HKgIi5EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=T-Z8HKgIi5EC&printsec=frontcover&dq=java&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=T-Z8HKgIi5EC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Back_Door_Java.html?hl=&id=T-Z8HKgIi5EC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=T-Z8HKgIi5EC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "&quot;An important contribution to studies of gender and the state in Southeast Asia, this eminently readable book is at once engaging and profound.&quot; - Mary Steedly, Harvard University"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "87totx4p3ZcC",
+   "etag": "9evTPGP1QPM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/87totx4p3ZcC",
+   "volumeInfo": {
+    "title": "Java in a Time of Revolution",
+    "subtitle": "Occupation and Resistance, 1944-1946",
+    "authors": [
+     "Benedict Anderson"
+    ],
+    "publisher": "Equinox Publishing",
+    "publishedDate": "2005-12-01",
+    "description": "With remarkable scope and in scrupulous detail, Professor Anderson analyzes the Indonesian revolution of 1945. Against the background of Javanese culture and the Japanese occupation, he explores the origins of the revolutionary youth groups, the military, and the political parties to challenge conventional interpretations of revolutionary movements in Asia. The author emphasizes that the critical role in the outbreak was played not by the dissatisfied intellectuals or by an oppressed working class but by the youth of Indonesia. Perhaps most important are the insights he offers into the conflict between strategies for seeking national revolution and those for attaining social change. By giving first priority to gaining recognition of Indonesian sovereignty from the outside world, he argues, the revolutionary leadership had to adopt conservative domestic policies that greatly reduced the possibility of far-reaching social reform. This in-depth study of the independence crisis in Indonesia, brought back to life by Equinox Publishing as the first title in it's Classic Indonesia series, also illuminates the revolutionary process in other nations, where wars for independence have been fought but significant social and economic progress has not yet been achieved. ABOUT THE AUTHOR Benedict Anderson is one of the world's leading authorities on South East Asian nationalism and particularly on Indonesia. He is Professor of International Studies and Director of the Modern Indonesia Project at Cornell University, New York. His other works include Imagined Communities: Reflections on the Origin and Spread of Nationalism and The Spectre of Comparisons: Nationalism, Southeast Asia, and the World.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789793780146"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "9793780142"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 494,
+    "printType": "BOOK",
+    "categories": [
+     "History"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=87totx4p3ZcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=87totx4p3ZcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=87totx4p3ZcC&printsec=frontcover&dq=java&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=87totx4p3ZcC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Java_in_a_Time_of_Revolution.html?hl=&id=87totx4p3ZcC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_in_a_Time_of_Revolution-sample-epub.acsm?id=87totx4p3ZcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=87totx4p3ZcC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "ABOUT THE AUTHOR Benedict Anderson is one of the world&#39;s leading authorities on South East Asian nationalism and particularly on Indonesia."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "tVBeWuzsE5wC",
+   "etag": "Y1cU3kYjUNQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/tVBeWuzsE5wC",
+   "volumeInfo": {
+    "title": "Java for Bioinformatics and Biomedical Applications",
+    "authors": [
+     "Harshawardhan Bal",
+     "Johnny Hujol"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2007-01-16",
+    "description": "Medical science and practice have undergone fundamental changes in the last 5 years, as large-scale genome projects have resulted in the sequencing of a number of important microbial, plant and animal genomes. This book aims to combine industry standard software engineering and design principles with genomics, bioinformatics and cancer research. Rather than an exercise in learning a programming platform, the text focuses on useful analytical tools for the scientific community.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780387372372"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0387372377"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 342,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.3.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=tVBeWuzsE5wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=tVBeWuzsE5wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=tVBeWuzsE5wC&printsec=frontcover&dq=java&hl=&cd=7&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=tVBeWuzsE5wC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-tVBeWuzsE5wC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 669.81,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 468.87,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=tVBeWuzsE5wC&rdid=book-tVBeWuzsE5wC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.6981E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.6887E8,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_for_Bioinformatics_and_Biomedical_A-sample-epub.acsm?id=tVBeWuzsE5wC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_for_Bioinformatics_and_Biomedical_A-sample-pdf.acsm?id=tVBeWuzsE5wC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=tVBeWuzsE5wC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This book aims to combine industry standard software engineering and design principles with genomics, bioinformatics and cancer research."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "_pIcG_aZGjsC",
+   "etag": "6PJiffRmlhM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/_pIcG_aZGjsC",
+   "volumeInfo": {
+    "title": "Ecology of Java & Bali",
+    "authors": [
+     "Tony Whitten",
+     "Roehayat Emon Soeriaatmadja",
+     "Suraya A. Afiff"
+    ],
+    "publisher": "Oxford University Press",
+    "publishedDate": "1996",
+    "description": "Series blurb: The Ecology of Indonesia series explores one of the most biologically diverse areas of the world, incorporating current research from Western and Indonesian specialists. Each book describes in detail, Indonesia's fragile ecosystems, its unparalled biodiversity, its peoples andtheir use of natural resources, and the ecological problems which have resulted from rapid economic development.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "9625930728"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9789625930725"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 969,
+    "printType": "BOOK",
+    "categories": [
+     "History"
+    ],
+    "averageRating": 1.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=_pIcG_aZGjsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=_pIcG_aZGjsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=_pIcG_aZGjsC&printsec=frontcover&dq=java&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=_pIcG_aZGjsC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Ecology_of_Java_Bali.html?hl=&id=_pIcG_aZGjsC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=_pIcG_aZGjsC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Series blurb: The Ecology of Indonesia series explores one of the most biologically diverse areas of the world, incorporating current research from Western and Indonesian specialists."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "nzhxR1spWEYC",
+   "etag": "QwigzyajGv0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/nzhxR1spWEYC",
+   "volumeInfo": {
+    "title": "Head First Java",
+    "authors": [
+     "Kathy Sierra",
+     "Bert Bates"
+    ],
+    "publisher": "\"O'Reilly Media, Inc.\"",
+    "publishedDate": "2003",
+    "description": "An interactive guide to the fundamentals of the Java programming language utilizes icons, cartoons, and numerous other visual aids to introduce the features and functions of Java and to teach the principles of designing and writing Java programs. Original. (Beginner)",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0596004656"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780596004651"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 619,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 11,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.0.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=nzhxR1spWEYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=nzhxR1spWEYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=nzhxR1spWEYC&printsec=frontcover&dq=java&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=nzhxR1spWEYC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Head_First_Java.html?hl=&id=nzhxR1spWEYC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=nzhxR1spWEYC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "An interactive guide to the fundamentals of the Java programming language utilizes icons, cartoons, and numerous other visual aids to introduce the features and functions of Java and to teach the principles of designing and writing Java ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "qXayo7k3oakC",
+   "etag": "mPCnvobe7oM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/qXayo7k3oakC",
+   "volumeInfo": {
+    "title": "Java and Modern Europe",
+    "subtitle": "Ambiguous Encounters",
+    "authors": [
+     "Ann Kumar"
+    ],
+    "publisher": "Psychology Press",
+    "publishedDate": "1997",
+    "description": "This book presents a case study of Europe's impact on an old and distinctive non-European civilisation. Part One deals with the elements in Europe's strength, technological, political and intellectual. It also uses Wallerstein's world-systems perspective to give an economic dimension to this picture of the new world of Europe, and then looks at the important question of the changing place of the Dutch in the new economic order from the seventeenth to the eighteenth century. This is followed by a brief account of the history of the Dutch East-India Company in Java, and its political effects. Part Two deals with the nature of the Javanese ancien regime, both in court and in provincial circles, with a focus on society and civilisation, rather than those staples of Javanese historiography to date, political events and economic statistics. Part Three deals with the overall pattern set by the VOC's changing economic imperatives and with the impact of the successive tides of capitalism on three regional societies of Java. Part Four deals with intellectual shifts that took place in this period, and argues that these shifts were less conservative than the socio-economic ones described in Part Three and, though more fragile and vulnerable, were crucial for the future. The conclusion attempts to show the significance of these developments for modern Indonesia and the way in which some of the dynamics begun in this period are being played out in the contemporary world.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0700704337"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780700704330"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 472,
+    "printType": "BOOK",
+    "categories": [
+     "Political Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.3.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=qXayo7k3oakC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=qXayo7k3oakC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=qXayo7k3oakC&printsec=frontcover&dq=java&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=qXayo7k3oakC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Java_and_Modern_Europe.html?hl=&id=qXayo7k3oakC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_and_Modern_Europe-sample-epub.acsm?id=qXayo7k3oakC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=qXayo7k3oakC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Presents a case study of Europe&#39;s impact on an old and distinctive non-European civilisation, recounting first the history and then how some of the dynamics begun in the past are being played out in the contemporary world."
+   }
+  }
+ ]
+}

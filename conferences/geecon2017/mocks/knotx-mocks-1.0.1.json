@@ -1,0 +1,16 @@
+{
+  "modules": [
+    "knotx:io.knotx.ServiceMock"
+  ],
+  "config": {
+    "knotx:io.knotx.ServiceKnot": {
+      "options": {
+        "config": {
+          "mockDataRoot": "mock/service",
+          "bouncing": true,
+          "httpPort": 3000
+        }
+      }
+    }
+  }
+}
