@@ -6,7 +6,7 @@
 
   <groupId>knotx.io.tutorial</groupId>
   <artifactId>custom-service-adapter</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>Custom service adapter</name>
 
   <properties>
@@ -14,7 +14,7 @@
     <main.verticle>com.cognifide.knotx.launcher.KnotxStarterVerticle</main.verticle>
     <file.encoding>UTF-8</file.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <knotx.version>1.0.0</knotx.version>
+    <knotx.version>1.0.1</knotx.version>
   </properties>
 
   <dependencies>
@@ -32,7 +32,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-jdbc-client</artifactId>
-      <version>3.3.3</version>
+      <version>3.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
