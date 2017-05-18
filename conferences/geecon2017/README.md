@@ -1,3 +1,5 @@
+<img src="https://2017.geecon.org/assets/images/logo.png" alt="GeeCon"/>
+
 # GeeCON 2017 demo
 
 <p align="center">
@@ -124,6 +126,7 @@ See the console log and try also with other queries:
 
 Before the next steps checkout and build [Adapt Service Without Web API](https://github.com/Knotx/knotx-tutorials/tree/master/adapt-service-without-webapi)
 using Maven. Place the `custom-service-adapter-1.0.1-fat.jar` it in the `instance-2/app` folder.
+Then prepare the DB according to [Tutorial](http://o7planning.org/en/10287/installing-and-configuring-hsqldb-database).
 
 ##### 1. Run `instance-3` with `BooksDbAdapter` in cluster mode (assuming `instance-1` and `instance-2` are still running):
 
