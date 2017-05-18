@@ -16,7 +16,7 @@
         "config": {
           "repositories": [
             {
-              "path": "/html/.*",
+              "path": "/.*",
               "address": "knotx.core.repository.filesystem"
             }
           ]
