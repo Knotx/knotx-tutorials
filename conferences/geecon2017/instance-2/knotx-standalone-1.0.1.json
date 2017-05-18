@@ -32,7 +32,7 @@
               "name": "bookslist",
               "address": "knotx.adapter.service.http",
               "params": {
-                "path": "/books/v1/volumes?q=java"
+                "path": "/books/v1/volumes?q={param.q}"
               }
             }
           ]
