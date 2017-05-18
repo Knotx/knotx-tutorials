@@ -87,13 +87,20 @@ See the console log and try also with other queries:
     - [Vert.x](http://localhost:8092/service/books.html?q=vertx)
     - [Reactive](http://localhost:8092/service/books.html?q=reactive)
 
+##### 4. Shut down the `instance-1` (by `^C`).
+
 ### Cluster mode - scale the most used part of the system - `Search`
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-3.png" alt="Cluster"/>
 </p>
 
-##### 1. Start the second instance of Knot.x application:
+##### 1. Start the instances `instance-1` and `instance-2` of Knot.x application:
+```
+$ cd instance-1
+$ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json -cluster
+```
+
 ```
 $ cd instance-2
 $ java -Dvertx.disableDnsResolver=true -Dlogback.configurationFile=knotx-standalone-1.0.1.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-standalone-1.0.1.json -cluster
