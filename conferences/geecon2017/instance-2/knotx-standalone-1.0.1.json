@@ -1,0 +1,57 @@
+{
+  "modules": [
+    "knotx:io.knotx.ServiceKnot",
+    "knotx:io.knotx.HttpServiceAdapter"
+  ],
+  "config": {
+    "knotx:io.knotx.HttpServiceAdapter": {
+      "options": {
+        "config": {
+          "clientOptions": {
+            "ssl": true
+          },
+          "services": [
+            {
+              "path": "/books.*",
+              "domain": "www.googleapis.com",
+              "port": 443,
+              "allowedRequestHeaders": [
+                "Content-Type",
+                "X-*"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "knotx:io.knotx.ServiceKnot": {
+      "options": {
+        "config": {
+          "services": [
+            {
+              "name": "bookslist",
+              "address": "knotx.adapter.service.http",
+              "params": {
+                "path": "/books/v1/volumes?q={param.q}"
+              }
+            },
+            {
+              "name": "books-listing",
+              "address": "knotx.adapter.service.booksdb",
+              "params": {
+                "query": "SELECT * FROM books"
+              }
+            },
+            {
+              "name": "authors-listing",
+              "address": "knotx.adapter.service.booksdb",
+              "params": {
+                "query": "SELECT * FROM authors"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 593,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "gJEC2q7DzpQC",
+   "etag": "7LAZas07aeg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gJEC2q7DzpQC",
+   "volumeInfo": {
+    "title": "Building Reactive Microservices in Java",
+    "authors": [
+     "Clement Escoffier"
+    ],
+    "publishedDate": "2017",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "HARVARD:32044021066998"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 868,
+    "printType": "BOOK",
+    "categories": [
+     "Java (Indonesia)"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.3.0.full.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "https://developers.redhat.com/sites/default/files/2017-04/reactivemicroservices_solp_270px.png",
+     "thumbnail": "https://developers.redhat.com/sites/default/files/2017-04/reactivemicroservices_solp_270px.png"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=gJEC2q7DzpQC&printsec=frontcover&dq=java&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=gJEC2q7DzpQC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-gJEC2q7DzpQC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FREE",
+    "isEbook": true,
+    "buyLink": "https://play.google.com/store/books/details?id=gJEC2q7DzpQC&rdid=book-gJEC2q7DzpQC&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": true,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.pl/books/download/The_History_of_Java.epub?id=gJEC2q7DzpQC&hl=&output=epub&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.pl/books/download/The_History_of_Java.pdf?id=gJEC2q7DzpQC&hl=&output=pdf&sig=ACfU3U1FeZs0WwTQ2Z_X_IqhvzCelUN01A&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=gJEC2q7DzpQC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Ql6QgWf6i7cC",
+   "etag": "wGsE2DO3g70",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Ql6QgWf6i7cC",
+   "volumeInfo": {
+    "title": "Thinking in Java",
+    "authors": [
+     "Bruce Eckel"
+    ],
+    "publisher": "Prentice Hall Professional",
+    "publishedDate": "2003",
+    "description": "An overview of the programming language's fundamentals covers syntax, initialization, implementation, classes, error handling, objects, applets, multiple threads, projects, and network programming.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0131002872"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780131002876"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 1119,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 32,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.2.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Ql6QgWf6i7cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Ql6QgWf6i7cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=Ql6QgWf6i7cC&printsec=frontcover&dq=java&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=Ql6QgWf6i7cC&dq=java&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Thinking_in_Java.html?hl=&id=Ql6QgWf6i7cC"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Ql6QgWf6i7cC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Bruce Eckel&#39;s &quot;Thinking in Java— demonstrates advanced topics.Explains sound object-oriented principles as they apply to Java.Hands-on Java CD available online, with 15 hours of lectures and slides by Bruce Eckel.Live seminars, consulting ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UEdjAgAAQBAJ",
+   "etag": "ZLEbXS1EXJY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UEdjAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Java. Podstawy. Wydanie IX",
+    "authors": [
+     "Cay S. Horstmann",
+     "Gary Cornell"
+    ],
+    "publisher": "Helion",
+    "publishedDate": "2013-12-09",
+    "description": "Kolejne wydanie tej cenionej książki zostało zaktualizowane o wszystkie nowości, które pojawiły się w wersji 7 platformy Java Standard Edition. W trakcie lektury poznasz składnię języka oraz wszystkie istotne kwestie związane z programowaniem w Javie. Zrozumiesz założenia programowania obiektowego, nauczysz się korzystać z interfejsów oraz obsługiwać wyjątki. Przekonasz się również, jakie ułatwienia w tym zakresie oferuje Java 7 obsługa wielu wyjątków w ramach jednego bloku catch to tylko czubek góry lodowej.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788324677610"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8324677615"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 864,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.5.4.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=UEdjAgAAQBAJ&pg=PA852&dq=java&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-UEdjAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 79.0,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 55.3,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&rdid=book-UEdjAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 7.9E7,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 5.53E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-epub.acsm?id=UEdjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-pdf.acsm?id=UEdjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UEdjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "jogging.properties, 594 LinkedListTest.\u003cb\u003ejava\u003c/b\u003e, 681 LoggingImageViewer.\u003cb\u003ejava\u003c/b\u003e, 602 \u003cbr\u003e\nLotteryArray.\u003cb\u003ejava\u003c/b\u003e, 128 LotteryDrawing.\u003cb\u003ejava\u003c/b\u003e, 121 LotteryOdds.\u003cb\u003ejava\u003c/b\u003e, 108 Manager.\u003cbr\u003e\n\u003cb\u003ejava\u003c/b\u003e, 206, 232 ManagerTest.\u003cb\u003ejava\u003c/b\u003e, 204 MANIFEST.MF, 512 manifestu klasa&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "mVNjAgAAQBAJ",
+   "etag": "T7qSRyMXHa8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/mVNjAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Java. Techniki zaawansowane. Wydanie IX",
+    "authors": [
+     "Cay S. Horstmann",
+     "Gary Cornell"
+    ],
+    "publisher": "Helion",
+    "publishedDate": "2013-12-09",
+    "description": "Dziewiąte wydanie bestsellerowej pozycji Java. Techniki zaawansowane zostało zaktualizowane i uzupełnione o nowinki z najnowszej wersji języka Java oznaczonej numerem 7. W trakcie lektury dowiesz się, jak wydajnie korzystać ze strumieni, wyrażeń regularnych oraz baz danych. Java 7 to całkowicie nowy, mocno rozbudowany dostęp do plików opis wszystkich niuansów znajdziesz w tej publikacji. Co jeszcze? Tworzenie aplikacji dla różnych języków i lokalizacji, zaawansowane wykorzystanie biblioteki Swing oraz dystrybucja stworzonych aplikacji. To tylko niektóre z zagadnień poruszonych w tej wyjątkowej książce, która musi się znaleźć na półce każdego programisty języka Java.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788324677658"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8324677658"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 992,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.4.3.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=mVNjAgAAQBAJ&pg=PA287&dq=java&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-mVNjAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 119.0,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 83.3,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&rdid=book-mVNjAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.19E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 8.33E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-epub.acsm?id=mVNjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-pdf.acsm?id=mVNjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=mVNjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Zaawansowane typy języka SQL W tabeli 4.9 przedstawione zostały typy języka \u003cbr\u003e\nSQL obsługiwane w standardzie JDBC oraz ich odpowiedniki w języku \u003cb\u003eJava\u003c/b\u003e. \u003cbr\u003e\nTabela 4.9. Typy danych języka SQL i odpowiadające im typy języka \u003cb\u003eJava\u003c/b\u003e Typ&nbsp;..."
+   }
+  }
+ ]
+}

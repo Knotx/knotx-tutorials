@@ -1,0 +1,18 @@
+{
+  "modules": [
+    "knotx:io.knotx.example.BooksDbAdapter"
+  ],
+  "config": {
+    "knotx:io.knotx.tutorials.BooksDbAdapter": {
+      "options": {
+        "config": {
+          "address": "knotx.adapter.service.booksdb",
+          "clientOptions": {
+            "url": "jdbc:hsqldb:hsql://localhost:9001/",
+            "driver_class": "org.hsqldb.jdbcDriver"
+          }
+        }
+      }
+    }
+  }
+}
