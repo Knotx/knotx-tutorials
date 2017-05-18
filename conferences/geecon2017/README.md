@@ -116,7 +116,7 @@ See the console log and try also with other queries:
 
 ## Knot.x as an integration layer
 
-### DB
+### DB Integration
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-4.png" alt="DB Integration"/>
