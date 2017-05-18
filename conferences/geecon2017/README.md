@@ -28,7 +28,7 @@ Members [1] {
 }
 ```
 
-#### 2. Open [Books Page](http://localhost:8092/html/books.html).
+#### 2. Open [Books Page](http://localhost:8092/service/books.html?q=java).
 
 Console log:
 ```

@@ -16,7 +16,7 @@
         "config": {
           "repositories": [
             {
-              "path": "/html/.*",
+              "path": "/.*",
               "address": "knotx.core.repository.filesystem"
             }
           ]
@@ -60,6 +60,20 @@
               "address": "knotx.adapter.service.http",
               "params": {
                 "path": "/books/v1/volumes?q={param.q}"
+              }
+            },
+            {
+              "name": "books-listing",
+              "address": "knotx.adapter.service.booksdb",
+              "params": {
+                "query": "SELECT * FROM books"
+              }
+            },
+            {
+              "name": "authors-listing",
+              "address": "knotx.adapter.service.booksdb",
+              "params": {
+                "query": "SELECT * FROM authors"
               }
             }
           ]
