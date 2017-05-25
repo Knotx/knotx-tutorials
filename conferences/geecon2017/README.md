@@ -1,5 +1,7 @@
 <img src="https://2017.geecon.org/assets/images/logo.png" alt="GeeCon"/>
 
+GeeCON presentation is available [here](https://www.slideshare.net/TomaszMichalak1/knotx-when-vertx-and-rxjava-meet).
+
 # GeeCON 2017 demo
 
 <p align="center">
