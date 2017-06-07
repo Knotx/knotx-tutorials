@@ -1,0 +1,70 @@
+{
+  "modules": [
+    "knotx:io.knotx.KnotxServer",
+    "knotx:io.knotx.HttpRepositoryConnector",
+    "knotx:io.knotx.FilesystemRepositoryConnector",
+    "knotx:io.knotx.FragmentSplitter",
+    "knotx:io.knotx.FragmentAssembler",
+    "knotx:io.knotx.ServiceKnot",
+    "knotx:io.knotx.ActionKnot",
+    "knotx:io.knotx.HandlebarsKnot",
+    "knotx:io.knotx.HttpServiceAdapter"
+  ],
+  "config": {
+    "knotx:io.knotx.KnotxServer": {
+      "options": {
+        "config": {
+          "repositories": [
+            {
+              "path": "/.*",
+              "address": "knotx.core.repository.filesystem"
+            }
+          ]
+        }
+      }
+    },
+    "knotx:io.knotx.FilesystemRepositoryConnector": {
+      "options": {
+        "config": {
+          "address": "knotx.core.repository.filesystem",
+          "catalogue": "./content/"
+        }
+      }
+    },
+    "knotx:io.knotx.HttpServiceAdapter": {
+      "options": {
+        "config": {
+          "clientOptions": {
+            "ssl": true
+          },
+          "services": [
+            {
+              "path": "/books.*",
+              "domain": "www.googleapis.com",
+              "port": 443,
+              "allowedRequestHeaders": [
+                "Content-Type",
+                "X-*"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "knotx:io.knotx.ServiceKnot": {
+      "options": {
+        "config": {
+          "services": [
+            {
+              "name": "bookslist",
+              "address": "knotx.adapter.service.http",
+              "params": {
+                "path": "/books/v1/volumes?q={param.q}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
