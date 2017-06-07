@@ -30,41 +30,6 @@
           "catalogue": "./content/"
         }
       }
-    },
-    "knotx:io.knotx.HttpServiceAdapter": {
-      "options": {
-        "config": {
-          "clientOptions": {
-            "ssl": true
-          },
-          "services": [
-            {
-              "path": "/books.*",
-              "domain": "www.googleapis.com",
-              "port": 443,
-              "allowedRequestHeaders": [
-                "Content-Type",
-                "X-*"
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "knotx:io.knotx.ServiceKnot": {
-      "options": {
-        "config": {
-          "services": [
-            {
-              "name": "bookslist",
-              "address": "knotx.adapter.service.http",
-              "params": {
-                "path": "/books/v1/volumes?q={param.q}"
-              }
-            }
-          ]
-        }
-      }
     }
   }
 }
