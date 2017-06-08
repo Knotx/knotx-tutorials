@@ -8,7 +8,9 @@
   <title>reveal.js</title>
 
   <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+  <link rel="stylesheet" href="css/custom/custom.css">
+
 
   <!-- Theme used for syntax highlighting of code -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -55,14 +57,58 @@
       <section>
         <h1>@ML Integration approaches</h1>
       </section>
+
+      <!-- @TM -->
       <section>
-        @TM
-        Backend
+        <h1>Front-end approach</h1>
       </section>
       <section>
-        @TM
-        Client-side
+        <img height="600" src="assets/img/approach-front-end.png">
       </section>
+      <section>
+        <div style="float: left; width: 50%">
+          <h3>Pros:</h3>
+          <ul>
+            <li>simple to implement</li>
+            <li>reduced needs on infrastructure</li>
+          </ul>
+        </div>
+        <div style="float: left; width: 50%">
+          <h3>Cons:</h3>
+          <ul>
+            <ul>
+              <li>user experience on mobile / older browsers</li>
+              <li>requires well-defined public Web API</li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h1>Back-end approach</h1>
+      </section>
+      <section>
+        <img height="600" src="assets/img/approach-back-end.png">
+      </section>
+      <section>
+        <div style="float: left; width: 50%">
+          <h3>Pros:</h3>
+          <ul>
+            <li>improved <b>UX</b></li>
+            <li>allows integrating and orchestrating <b>various systems</b>, not only web-based</li>
+          </ul>
+        </div>
+        <div style="float: left; width: 50%">
+          <h3>Cons:</h3>
+          <ul>
+            <ul>
+              <li>heavier <b>infrastructure</b> needed</li>
+              <li>architecture needs careful design</li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
       <section>
         @ML
         Modern
@@ -81,6 +127,9 @@
           <li>Example - iframe</li>
           <li>Snippet/Config/Sources</li>
         </ul>
+      </section>
+      <section>
+        @TM performance results
       </section>
       <section>
         @ML Forms
