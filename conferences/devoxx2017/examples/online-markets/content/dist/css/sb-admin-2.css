@@ -431,3 +431,20 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
+
+.gain {
+  font-weight: bold;
+  color: #3f903f !important;
+}
+.warning {
+  font-weight: bold;
+  color: #f0ad4e !important;
+}
+.loss {
+  font-weight: bold;
+  color: #d9534f !important;
+}
+
+.page-bg {
+  background-color: #B2FFF2 !important;
+}

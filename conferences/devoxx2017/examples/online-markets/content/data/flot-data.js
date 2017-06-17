@@ -90,6 +90,7 @@ $(function() {
 
 //Flot Multiple Axes Line Chart
 $(function() {
+    // TODO: var oilprices = $.get( "http://localhost:3000/mock/service/oilprices.json" );
     var oilprices = [
         [1167692400000, 61.05],
         [1167778800000, 58.32],
