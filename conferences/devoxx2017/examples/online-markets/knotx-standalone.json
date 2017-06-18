@@ -20,22 +20,22 @@
           "defaultFlow": {
             "repositories": [
               {
-                "path": "/data/.*",
+                "path": "/example/data/.*",
                 "address": "knotx.core.repository.filesystem",
                 "doProcessing": false
               },
               {
-                "path": "/dist/.*",
+                "path": "/example/dist/.*",
                 "address": "knotx.core.repository.filesystem",
                 "doProcessing": false
               },
               {
-                "path": "/vendor/.*",
+                "path": "/example/vendor/.*",
                 "address": "knotx.core.repository.filesystem",
                 "doProcessing": false
               },
               {
-                "path": "/pages/.*",
+                "path": "/example/pages/.*",
                 "address": "knotx.core.repository.filesystem"
               }
             ],
@@ -45,7 +45,7 @@
             "routing": {
               "GET": [
                 {
-                  "path": "/.*",
+                  "path": "/example/.*",
                   "address": "knotx.knot.service",
                   "onTransition": {
                     "next": {
@@ -63,7 +63,7 @@
             "routing": {
               "GET": [
                 {
-                  "path": "/customFlow/.*",
+                  "path": "/prices/.*",
                   "address": "knotx.gateway.gatewayknot",
                   "onTransition": {
                     "next": {
