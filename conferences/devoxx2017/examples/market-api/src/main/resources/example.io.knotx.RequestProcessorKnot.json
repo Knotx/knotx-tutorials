@@ -1,5 +1,5 @@
 {
-  "main": "io.knotx.gateway.RequestProcessorKnotVerticle",
+  "main": "io.knotx.example.gateway.RequestProcessorKnotVerticle",
   "options": {
     "config": {
       "address": "knotx.gateway.requestprocessor"
