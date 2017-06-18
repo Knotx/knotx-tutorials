@@ -15,6 +15,8 @@ import rx.Single;
 
 public class RequestProcessorKnotProxyImpl extends AbstractKnotProxy {
 
+  private static final Date START_DATE = new Date(1434844800000L);
+
   @Override
   protected Single<KnotContext> processRequest(KnotContext knotContext) {
     return Single.just(createSuccessResponse(knotContext));
@@ -57,17 +59,15 @@ public class RequestProcessorKnotProxyImpl extends AbstractKnotProxy {
 
   private String generateResponse() {
     JsonArray response = new JsonArray();
-
-    final Date start = new Date(1223679600000L);
     final MarketSimulation marketSimulation = new MarketSimulation(0.05d, 50.d);
 
     for (int i = 0; i < 350; i++) {
-      final long timeInMillis = nextDate(start, i);
-      final JsonArray jsonArray = new JsonArray();
+      final long timeInMillis = nextDate(START_DATE, i);
+      final JsonArray dayRates = new JsonArray();
 
-      jsonArray.add(timeInMillis)
+      dayRates.add(timeInMillis)
           .add(marketSimulation.simulate());
-      response.add(jsonArray);
+      response.add(dayRates);
     }
 
     return response.toString();
