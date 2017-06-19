@@ -1,39 +1,45 @@
 //Flot Multiple Axes Line Chart
 $(function () {
-  var oilprices = [];
-  var exchangerates = [];
-  var oilpricesApiCall = $.get("http://localhost:8092/prices/api/oilprices.json");
+  var oilprices = {};
+  var exchangerates = {};
 
-  oilpricesApiCall.done(function (data) {
-    oilprices = data;
-    var exchangeApiCall = $.get("http://localhost:8092/prices/api/exchangerates.json");
-    exchangeApiCall.done(function (rates) {
-      exchangerates = rates;
-      doPlot("right");
+  function refreshPlot() {
+    var oilpricesApiCall = $.get(
+        "http://localhost:8092/prices/api/oilprices");
+    oilpricesApiCall.done(function (data) {
+      oilprices = data;
+      var exchangeApiCall = $.get(
+          "http://localhost:8092/prices/api/exchangerates");
+      exchangeApiCall.done(function (rates) {
+        exchangerates = rates;
+        doPlot("right");
+      });
     });
-  });
+  }
 
   function euroFormatter(v, axis) {
+    console.log("Axis: ", axis);
     return v.toFixed(axis.tickDecimals) + "€";
   }
 
   function doPlot(position) {
     $.plot($("#flot-line-chart-multi"), [{
-      data: oilprices,
+      data: oilprices.rates,
       label: "Oil price ($)"
     }, {
-      data: exchangerates,
+      data: exchangerates.rates,
       label: "USD/EUR exchange rate",
       yaxis: 2
     }], {
       xaxes: [{
-        mode: 'time'
+        mode: 'time',
+        timeformat: "%h:%M:%S"
       }],
       yaxes: [{
         min: 0
       }, {
         // align if we are to the right
-        alignTicksWithAxis: position == "right" ? 1 : null,
+        alignTicksWithAxis: position === "right" ? 1 : null,
         position: position,
         tickFormatter: euroFormatter
       }],
@@ -45,8 +51,8 @@ $(function () {
       },
       tooltip: true,
       tooltipOpts: {
-        content: "%s for %x was %y",
-        xDateFormat: "%y-%0m-%0d",
+        content: "%s at %x was %y",
+        xDateFormat: "%h:%M:%S",
 
         onHover: function (flotItem, $tooltipEl) {
           // console.log(flotItem, $tooltipEl);
@@ -56,7 +62,10 @@ $(function () {
     });
   }
 
-  $("button").click(function () {
-    doPlot($(this).text());
-  });
+  refreshPlot();
+  setInterval(refreshPlot, 5000);
+
+  // $("button").click(function () {
+  //   doPlot($(this).text());
+  // });
 });
