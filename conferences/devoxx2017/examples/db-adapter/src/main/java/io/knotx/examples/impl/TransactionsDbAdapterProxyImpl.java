@@ -24,17 +24,12 @@ public class TransactionsDbAdapterProxyImpl extends AbstractAdapterProxy {
   @Override
   protected Single<AdapterResponse> processRequest(AdapterRequest adapterRequest) {
     final String query = adapterRequest.getParams().getString("query");
-    LOGGER.info("Processing request with query: `{}`", query);
-
-//   TODO: client.rxGetConnection()
-    return null;
-
-//    return client.getConnectionObservable()
-//        .flatMap(
-//            sqlConnection -> sqlConnection.queryObservable(query)
-//        )
-//        .doOnNext(rs -> rs.getRows().forEach(LOGGER::info))
-//        .map(this::toAdapterResponse);
+    LOGGER.debug("Processing request with query: `{}`", query);
+    return client.rxGetConnection()
+        .flatMap(
+            sqlConnection -> sqlConnection.rxQuery(query)
+        )
+        .map(this::toAdapterResponse);
   }
 
   private AdapterResponse toAdapterResponse(ResultSet rs) {
