@@ -11,7 +11,8 @@
     "knotx:io.knotx.HttpServiceAdapter",
     "knotx:io.knotx.GatewayKnot",
     "knotx:example.io.knotx.RequestProcessorKnot",
-    "knotx:io.knotx.ResponseProviderKnot"
+    "knotx:io.knotx.ResponseProviderKnot",
+    "knotx:io.knotx.example.TransactionsDbAdapter"
   ],
   "config": {
     "knotx:io.knotx.KnotxServer": {
@@ -113,6 +114,13 @@
               "address": "knotx.adapter.service.http",
               "params": {
                 "path": "/service/mock/commodities.json"
+              }
+            },
+            {
+              "name": "transactions",
+              "address": "knotx.adapter.service.transastionsdb",
+              "params": {
+                "query": "SELECT * FROM transactions"
               }
             }
           ]
