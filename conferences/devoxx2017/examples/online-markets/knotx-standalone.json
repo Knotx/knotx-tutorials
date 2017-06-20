@@ -11,8 +11,7 @@
     "knotx:io.knotx.HttpServiceAdapter",
     "knotx:io.knotx.GatewayKnot",
     "knotx:example.io.knotx.RequestProcessorKnot",
-    "knotx:io.knotx.ResponseProviderKnot",
-    "knotx:io.knotx.example.TransactionsDbAdapter"
+    "knotx:io.knotx.ResponseProviderKnot"
   ],
   "config": {
     "knotx:io.knotx.KnotxServer": {
