@@ -135,41 +135,21 @@ Now open again [Example Online Market Dashboard Page](http://localhost:8092/exam
 You should see a page with no changes to previous version. We still need to embed a dynamic snippet:
 
 ```html
-      <!-- transactions -->
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <i class="fa fa-globe fa-fw"></i> My Transactions
-          </div>
-          <!-- /.panel-heading -->
-          <div class="panel-body">
-            <div class="list-group">
-              <script data-knotx-knots="services,handlebars"
-                      data-knotx-service="transactions"
-                      type="text/knotx-snippet">
-                                 {{#each _result}}
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-history fa-fw"></i> {{this.COMMODITY}}
-                                        <span class="pull-right text-muted"><em>total: {{this.TRANSACTION_VALUE}} $</em></span>
-                                        <span class="text-muted small"><em>unit price: {{this.UNIT_PRICE}}$</em></span>
-                                        <span class="text-muted small"><em> x {{this.UNITS_BOUGHT}}</em></span>
-                                        <span class="text-muted small"><em> at {{this.TRANSACTION_DATE}}</em></span>
-                                    </a>
-                                  {{/each}}
-              </script>
-            </div>
-            <!-- /.list-group -->
-          </div>
-          <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
-      </div>
-      <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-    <!-- END transactions -->
+<script data-knotx-knots="services,handlebars"
+      data-knotx-service="transactions"
+      type="text/knotx-snippet">
+             {{#each _result}}
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-history fa-fw"></i> {{this.COMMODITY}}
+                    <span class="pull-right text-muted"><em>total: {{this.TRANSACTION_VALUE}} $</em></span>
+                    <span class="text-muted small"><em>unit price: {{this.UNIT_PRICE}}$</em></span>
+                    <span class="text-muted small"><em> x {{this.UNITS_BOUGHT}}</em></span>
+                    <span class="text-muted small"><em> at {{this.TRANSACTION_DATE}}</em></span>
+                </a>
+              {{/each}}
+</script>
 ```
 
-Place it just after `col-lg-12 search box` just about line `298`.
+Place it instead of `<p>TODO</p>` just about line `351`.
 
 Refresh the page - you should see transactions from the Database.
