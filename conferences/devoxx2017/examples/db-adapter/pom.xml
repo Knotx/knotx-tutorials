@@ -13,7 +13,7 @@
         <main.verticle>com.cognifide.knotx.launcher.KnotxStarterVerticle</main.verticle>
         <file.encoding>UTF-8</file.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <knotx.version>1.0.2-SNAPSHOT</knotx.version>
+        <knotx.version>1.1.0</knotx.version>
     </properties>
 
     <dependencies>

@@ -13,7 +13,7 @@ Before the next steps
  and place it in the `app` folder under `examples/online-markets`,
 - download [Knot.x mocks fat jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-mocks/1.1.0/knotx-mocks-1.1.0.fat.jar)
    and place it in the `app` folder under `mocks`,
-- build `examples/market-api` (`mvn clean install`) and place `market-api-1.0-SNAPSHOT.jar` in the `app` folder under `examples/online-markets`.
+- build `examples/market-api` (`mvn clean install`) and place `market-api-1.0.jar` in the `app` folder under `examples/online-markets`.
 
 
 ## Demo
