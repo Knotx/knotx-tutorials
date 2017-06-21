@@ -1,9 +1,5 @@
-# Devoxx 2017 demo
-
-This is demo script prepared for Devoxx 2017.
-
 <p align="center">
-  <img src="https://github.com/Cognifide/knotx/blob/master/icons/180x180.png?raw=true" alt="Knot.x Logo"/>
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/feature/devoxx2017/conferences/devoxx2017/img/Devoxx-Poland-2017-Knotx.png?raw=true" alt="Knot.x Devoxx"/>
 </p>
 
 ## Prerequisites
