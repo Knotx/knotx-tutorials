@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Knotx/knotx-tutorials/blob/feature/devoxx2017/conferences/devoxx2017/img/Devoxx-Poland-2017-Knotx.png?raw=true" alt="Knot.x Devoxx"/>
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/devoxx2017/img/Devoxx-Poland-2017-Knotx.png?raw=true" alt="Knot.x Devoxx"/>
 </p>
 
 ## Prerequisites
