@@ -1,0 +1,12 @@
+{
+  "main": "io.knotx.examples.TransactionsDbAdapter",
+  "options": {
+    "config": {
+      "address": "knotx.adapter.service.transastionsdb",
+      "clientOptions": {
+        "url": "jdbc:hsqldb:hsql://localhost:9001/",
+        "driver_class": "org.hsqldb.jdbcDriver"
+      }
+    }
+  }
+}
