@@ -15,7 +15,7 @@ This demo extends [Hello REST service](http://knotx.io/blog/hello-rest-service/)
 ### Mocked data version
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-1.png" alt="Mocked"/>
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/master/conferences/geecon2017/img/demo-knot-1.png" alt="Mocked"/>
 </p>
 
 Before the next steps download [Knot.x standalone fat jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar)
@@ -73,7 +73,7 @@ Notice the configuration that points to service `"bookslist"`:
 ### GoogleAPI data version
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-2.png" alt="Google API"/>
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/master/conferences/geecon2017/img/demo-knot-2.png" alt="Google API"/>
 </p>
 
 ##### 1. Open [Google Books API](https://www.googleapis.com/books/v1/volumes?q=java)
@@ -94,7 +94,7 @@ See the console log and try also with other queries:
 ### Cluster mode - scale the most used part of the system - `Search`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-3.png" alt="Cluster"/>
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/master/conferences/geecon2017/img/demo-knot-3.png" alt="Cluster"/>
 </p>
 
 ##### 1. Start the instances `instance-1` and `instance-2` of Knot.x application:
@@ -130,7 +130,7 @@ See the console log and try also with other queries:
 ### DB Integration
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/feature/geecon-demo/conferences/geecon2017/img/demo-knot-4.png" alt="DB Integration"/>
+  <img src="https://raw.githubusercontent.com/Knotx/knotx-tutorials/master/conferences/geecon2017/img/demo-knot-4.png" alt="DB Integration"/>
 </p>
 
 Before the next steps checkout and build [Adapt Service Without Web API](https://github.com/Knotx/knotx-tutorials/tree/master/adapt-service-without-webapi)
