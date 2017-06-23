@@ -17,11 +17,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.vertx</groupId>
-      <artifactId>vertx-core</artifactId>
-      <version>3.4.1</version>
-    </dependency>
-    <dependency>
       <groupId>io.knotx</groupId>
       <artifactId>knotx-gateway</artifactId>
       <version>${knotx.version}</version>
