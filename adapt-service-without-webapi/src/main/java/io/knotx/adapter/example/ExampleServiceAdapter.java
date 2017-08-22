@@ -28,9 +28,9 @@ public class ExampleServiceAdapter extends AbstractVerticle {
 
     //register the service proxy on the event bus, notice using `getVertx()` here to obtain non-rx version of vertx
     consumer = ProxyHelper
-            .registerService(AdapterProxy.class, getVertx(),
-                    new ExampleServiceAdapterProxy(client),
-                    configuration.getAddress());
+        .registerService(AdapterProxy.class, getVertx(),
+            new ExampleServiceAdapterProxy(client),
+            configuration.getAddress());
   }
 
   @Override
