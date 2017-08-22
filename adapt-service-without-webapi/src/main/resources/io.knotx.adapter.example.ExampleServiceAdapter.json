@@ -1,0 +1,12 @@
+{
+  "main": "io.knotx.adapter.example.ExampleServiceAdapter",
+  "options": {
+    "config": {
+      "address": "knotx.adapter.service.example",
+      "clientOptions": {
+        "url": "jdbc:hsqldb:hsql://localhost:9001/",
+        "driver_class": "org.hsqldb.jdbcDriver"
+      }
+    }
+  }
+}

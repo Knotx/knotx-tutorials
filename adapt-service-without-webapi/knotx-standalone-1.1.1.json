@@ -1,0 +1,35 @@
+{
+  "modules": [
+    "knotx:io.knotx.KnotxServer",
+    "knotx:io.knotx.FilesystemRepositoryConnector",
+    "knotx:io.knotx.FragmentSplitter",
+    "knotx:io.knotx.FragmentAssembler",
+    "knotx:io.knotx.ServiceKnot",
+    "knotx:io.knotx.HandlebarsKnot",
+    "knotx:io.knotx.adapter.example.ExampleServiceAdapter"
+  ],
+  "config": {
+    "knotx:io.knotx.ServiceKnot": {
+      "options": {
+        "config": {
+          "services": [
+            {
+              "name": "books-listing",
+              "address": "knotx.adapter.service.example",
+              "params": {
+                "query": "SELECT * FROM books"
+              }
+            },
+            {
+              "name": "authors-listing",
+              "address": "knotx.adapter.service.example",
+              "params": {
+                "query": "SELECT * FROM authors"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
