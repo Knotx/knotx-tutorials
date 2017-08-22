@@ -14,7 +14,7 @@
     limitations under the License.
 */
 
-package io.knotx.tutorial;
+package io.knotx.tutorial.adapter.example;
 
 import io.vertx.core.json.JsonObject;
 

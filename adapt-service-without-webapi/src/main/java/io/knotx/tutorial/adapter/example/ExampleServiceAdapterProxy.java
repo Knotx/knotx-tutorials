@@ -14,7 +14,7 @@
     limitations under the License.
 */
 
-package io.knotx.tutorial;
+package io.knotx.tutorial.adapter.example;
 
 import io.knotx.adapter.AbstractAdapterProxy;
 import io.knotx.dataobjects.AdapterRequest;

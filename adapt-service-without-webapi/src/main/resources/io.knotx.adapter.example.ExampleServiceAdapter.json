@@ -1,5 +1,5 @@
 {
-  "main": "io.knotx.tutorial.example.ExampleServiceAdapter",
+  "main": "io.knotx.tutorial.adapter.example.ExampleServiceAdapter",
   "options": {
     "config": {
       "address": "knotx.adapter.service.example",
