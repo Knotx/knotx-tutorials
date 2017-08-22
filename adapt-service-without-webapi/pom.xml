@@ -7,7 +7,7 @@
   <artifactId>custom-service-adapter</artifactId>
   <version>1.1.1</version>
 
-  <name>io knotx</name>
+  <name>First custom service adapter</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.knotx.io</url>
 
@@ -26,11 +26,6 @@
     <dependency>
       <groupId>io.knotx</groupId>
       <artifactId>knotx-adapter-common</artifactId>
-      <version>${knotx.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.knotx</groupId>
-      <artifactId>knotx-knot-handlebars</artifactId>
       <version>${knotx.version}</version>
     </dependency>
 

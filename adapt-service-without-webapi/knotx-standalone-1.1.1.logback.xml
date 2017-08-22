@@ -7,7 +7,7 @@ Copyright (C) 2016 Cognifide Limited Licensed under the Apache License, Version 
       <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</Pattern>
     </layout>
   </appender>
-  <logger name="io.knotx" level="INFO" additivity="false">
+  <logger name="io.knotx.tutorial" level="DEBUG" additivity="false">
     <appender-ref ref="STDOUT"/>
   </logger>
   <root level="ERROR">
