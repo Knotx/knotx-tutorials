@@ -37,6 +37,7 @@ public class ExampleServiceAdapter extends AbstractVerticle {
   @Override
   public void init(Vertx vertx, Context context) {
     LOGGER.debug("Initializing <{}>", this.getClass().getSimpleName());
+
     super.init(vertx, context);
     // using config() method from AbstractVerticle we simply pass our JSON file configuration to Java model
     configuration = new ExampleServiceAdapterConfiguration(config());
@@ -44,6 +45,8 @@ public class ExampleServiceAdapter extends AbstractVerticle {
 
   @Override
   public void start() throws Exception {
+    LOGGER.debug("Starting <{}>", this.getClass().getSimpleName());
+
     //create JDBC Clinet here and pass it to AdapterProxy - notice using clientOptions property here
     final JDBCClient client = JDBCClient.createShared(vertx, configuration.getClientOptions());
 
