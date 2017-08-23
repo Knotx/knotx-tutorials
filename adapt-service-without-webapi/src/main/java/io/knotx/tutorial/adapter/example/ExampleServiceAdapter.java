@@ -36,7 +36,7 @@ public class ExampleServiceAdapter extends AbstractVerticle {
 
   @Override
   public void init(Vertx vertx, Context context) {
-    LOGGER.debug("Starting <{}>", this.getClass().getSimpleName());
+    LOGGER.debug("Initializing <{}>", this.getClass().getSimpleName());
     super.init(vertx, context);
     // using config() method from AbstractVerticle we simply pass our JSON file configuration to Java model
     configuration = new ExampleServiceAdapterConfiguration(config());
@@ -44,7 +44,6 @@ public class ExampleServiceAdapter extends AbstractVerticle {
 
   @Override
   public void start() throws Exception {
-    LOGGER.debug("Starting <{}>", this.getClass().getSimpleName());
     //create JDBC Clinet here and pass it to AdapterProxy - notice using clientOptions property here
     final JDBCClient client = JDBCClient.createShared(vertx, configuration.getClientOptions());
 
@@ -53,13 +52,17 @@ public class ExampleServiceAdapter extends AbstractVerticle {
         .registerService(AdapterProxy.class, getVertx(),
             new ExampleServiceAdapterProxy(client),
             configuration.getAddress());
+
+    LOGGER.debug("Started <{}>", this.getClass().getSimpleName());
   }
 
   @Override
   public void stop() throws Exception {
-    LOGGER.debug("Starting <{}>", this.getClass().getSimpleName());
+    LOGGER.debug("Stopping <{}>", this.getClass().getSimpleName());
+
     // unregister adapter when no longer needed
     ProxyHelper.unregisterService(consumer);
+    LOGGER.debug("Stopped <{}>", this.getClass().getSimpleName());
   }
 
 }
