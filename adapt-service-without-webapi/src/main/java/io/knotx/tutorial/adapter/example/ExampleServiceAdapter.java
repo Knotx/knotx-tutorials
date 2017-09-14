@@ -17,12 +17,12 @@
 package io.knotx.tutorial.adapter.example;
 
 import io.knotx.proxy.AdapterProxy;
-import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Context;
 import io.vertx.core.Vertx;
 import io.vertx.core.eventbus.MessageConsumer;
 import io.vertx.core.json.JsonObject;
-import io.vertx.ext.jdbc.JDBCClient;
+import io.vertx.rxjava.core.AbstractVerticle;
+import io.vertx.rxjava.ext.jdbc.JDBCClient;
 import io.vertx.serviceproxy.ProxyHelper;
 
 public class ExampleServiceAdapter extends AbstractVerticle {
