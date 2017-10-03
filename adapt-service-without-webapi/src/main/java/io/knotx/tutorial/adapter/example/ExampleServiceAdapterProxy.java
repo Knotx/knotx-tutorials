@@ -47,10 +47,7 @@ public class ExampleServiceAdapterProxy extends AbstractAdapterProxy {
         .flatMap(
             sqlConnection -> sqlConnection.rxQuery(query)
         )
-        .map(this::toAdapterResponse)
-        .doOnSuccess(
-            adapterResponse -> LOGGER.debug("Data from database was processed: `{}`", adapterResponse.toString())
-        );
+        .map(this::toAdapterResponse);
   }
 
   private AdapterResponse toAdapterResponse(ResultSet rs) {

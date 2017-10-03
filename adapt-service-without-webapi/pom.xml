@@ -8,8 +8,7 @@
   <version>1.1.1</version>
 
   <name>First custom service adapter</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.knotx.io</url>
+  <url>http://knotx.io</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,11 +21,13 @@
       <groupId>io.knotx</groupId>
       <artifactId>knotx-core</artifactId>
       <version>${knotx.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>io.knotx</groupId>
       <artifactId>knotx-adapter-common</artifactId>
       <version>${knotx.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
