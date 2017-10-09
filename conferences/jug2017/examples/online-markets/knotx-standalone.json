@@ -1,0 +1,128 @@
+{
+  "modules": [
+    "knotx:io.knotx.KnotxServer",
+    "knotx:io.knotx.FilesystemRepositoryConnector",
+    "knotx:io.knotx.FragmentSplitter",
+    "knotx:io.knotx.FragmentAssembler",
+    "knotx:io.knotx.ServiceKnot",
+    "knotx:io.knotx.HandlebarsKnot",
+    "knotx:io.knotx.HttpServiceAdapter",
+    "knotx:io.knotx.GatewayKnot",
+    "knotx:example.io.knotx.RequestProcessorKnot",
+    "knotx:io.knotx.ResponseProviderKnot"
+  ],
+  "config": {
+    "knotx:io.knotx.KnotxServer": {
+      "options": {
+        "config": {
+          "defaultFlow": {
+            "repositories": [
+              {
+                "path": "/example/data/.*",
+                "address": "knotx.core.repository.filesystem",
+                "doProcessing": false
+              },
+              {
+                "path": "/example/dist/.*",
+                "address": "knotx.core.repository.filesystem",
+                "doProcessing": false
+              },
+              {
+                "path": "/example/vendor/.*",
+                "address": "knotx.core.repository.filesystem",
+                "doProcessing": false
+              },
+              {
+                "path": "/example/pages/.*",
+                "address": "knotx.core.repository.filesystem"
+              }
+            ],
+            "splitter": {
+              "address": "knotx.core.splitter"
+            },
+            "routing": {
+              "GET": [
+                {
+                  "path": "/example/.*",
+                  "address": "knotx.knot.service",
+                  "onTransition": {
+                    "next": {
+                      "address": "knotx.knot.handlebars"
+                    }
+                  }
+                }
+              ]
+            },
+            "assembler": {
+              "address": "knotx.core.assembler"
+            }
+          },
+          "customFlow": {
+            "routing": {
+              "GET": [
+                {
+                  "path": "/prices/.*",
+                  "address": "knotx.gateway.gatewayknot",
+                  "onTransition": {
+                    "next": {
+                      "address": "knotx.gateway.requestprocessor"
+                    }
+                  }
+                }
+              ]
+            },
+            "responseProvider": {
+              "address": "knotx.gateway.responseprovider"
+            }
+          }
+        }
+      }
+    },
+    "knotx:io.knotx.FilesystemRepositoryConnector": {
+      "options": {
+        "config": {
+          "address": "knotx.core.repository.filesystem",
+          "catalogue": "./content/"
+        }
+      }
+    },
+    "knotx:io.knotx.HttpServiceAdapter": {
+      "options": {
+        "config": {
+          "services": [
+            {
+              "path": "/service/mock/.*",
+              "domain": "localhost",
+              "port": 3000,
+              "allowedRequestHeaders": [
+                "*"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "knotx:io.knotx.ServiceKnot": {
+      "options": {
+        "config": {
+          "services": [
+            {
+              "name": "commodities",
+              "address": "knotx.adapter.service.http",
+              "params": {
+                "path": "/service/mock/commodities.json"
+              }
+            },
+            {
+              "name": "transactions",
+              "address": "knotx.adapter.service.transastionsdb",
+              "params": {
+                "query": "SELECT * FROM transactions"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
