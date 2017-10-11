@@ -33,6 +33,7 @@ $ java -Dlogback.configurationFile=logback.xml -cp "app/*" io.knotx.launcher.Log
 ```
 to start Knot.x instance with `market-api` module.
 
+Open [Example Online Market Dashboard Page](http://localhost:8092/example/pages/main.html).
 
 #### Request processing
 
@@ -60,9 +61,9 @@ This snippet looks like this:
 ```
 
 In this snippet we tell Knot.x that service `commodities` will provide the data for the component.
-Knot.x uses Handlebars Templating Engine to ingest dynamic data.
+Knot.x uses Handlebars Templating Engine to ingest the dynamic data.
 As you can see in the snippet, there is no URL defined, only the name of a service `commodities`.
-This approach allows the snippets to be free of the data source dependency and simply focus on shaping the data into a components.
+This approach allows the snippets to be free of the data source dependency and simply focus on shaping the data into components.
 Its actual address is defined in the configuration:
 
 ```json
