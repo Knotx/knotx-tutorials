@@ -14,7 +14,12 @@ Before the next steps
 
 ## Demo
 
-### Run online-markets demo
+### Integrating web-based services
+
+<p align="center">
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-one-host.png?raw=true" class="width: 800px" alt="Knot.x JUG"/>
+</p>
+
 In `mocks` run:
 ```
 $ java -Dlogback.configurationFile=knotx.logback.xml -cp "app/*" io.knotx.launcher.LogbackLauncher -conf knotx-mocks.json
@@ -28,17 +33,9 @@ $ java -Dlogback.configurationFile=logback.xml -cp "app/*" io.knotx.launcher.Log
 ```
 to start Knot.x instance with `market-api` module.
 
-### Example Online Market Dashboard with Gateway API Integration
 
-Open [Example Online Market Dashboard Page](http://localhost:8092/example/pages/main.html).
+#### Request processing
 
-Open developer console (e.g. `F12` in Chrome) and see XHR requests.
-You will see that there will be cyclic request for data for `oilprices` and `exchangerates` endpoints.
-Those endpoints are exposed directly via Knot.x Gateway API extension:
-- [http://localhost:8092/prices/api/exchangerates](http://localhost:8092/prices/api/exchangerates)
-- [http://localhost:8092/prices/api/oilprices](http://localhost:8092/prices/api/oilprices)
-
-### Backend Ingegration
 On the same page you can see `Commodities` panel with natural resources and their current market value.
 This data comes from external REST `commodities` endpoint which is provided by Knot.x mocks in this example:
 - [http://localhost:3000/mock/service/commodities.json](http://localhost:3000/mock/service/commodities.json)
@@ -79,6 +76,10 @@ Its actual address is defined in the configuration:
 ```
 
 ### Database Integration
+
+<p align="center">
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-two-hosts.png?raw=true" class="width: 800px" alt="Knot.x JUG"/>
+</p>
 
 #### Prerequisites
 Build `examples/db-adapter` (`mvn clean install`) and place `db-adapter-1.0-fat.jar` in the `app` folder under `examples/db-adapter`.
