@@ -1,0 +1,40 @@
+{
+  "commodities": [
+    {
+      "name": "Silver",
+      "units": "16.80",
+      "delta": "gain",
+      "change": "+0.29"
+    },
+    {
+      "name": "Gold",
+      "units": "1256.56",
+      "delta": "loss",
+      "change": "-0.21"
+    },
+    {
+      "name": "Palladium",
+      "units": "873.48",
+      "delta": "gain",
+      "change": "+0.86"
+    },
+    {
+      "name": "Platinum",
+      "units": "926.06",
+      "delta": "gain",
+      "change": "+0.38"
+    },
+    {
+      "name": "WTI Crude Oil",
+      "units": "44.68",
+      "delta": "gain",
+      "change": "+0.79"
+    },
+    {
+      "name": "Brent Crude Oil",
+      "units": "47.33",
+      "delta": "gain",
+      "change": "+1.11"
+    }
+  ]
+}
