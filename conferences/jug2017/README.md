@@ -17,7 +17,7 @@ Before the next steps
 ### Integrating web-based services
 
 <p align="center">
-  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-one-host.png?raw=true" class="width: 800px" alt="Knot.x JUG"/>
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-one-host.png?raw=true" alt="Knot.x JUG"/>
 </p>
 
 In `mocks` run:
@@ -78,7 +78,7 @@ Its actual address is defined in the configuration:
 ### Database Integration
 
 <p align="center">
-  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-two-hosts.png?raw=true" class="width: 800px" alt="Knot.x JUG"/>
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/demo-two-hosts.png?raw=true" alt="Knot.x JUG"/>
 </p>
 
 #### Prerequisites
