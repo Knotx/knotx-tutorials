@@ -37,6 +37,11 @@ Open [Example Online Market Dashboard Page](http://localhost:8092/example/pages/
 
 #### Request processing
 
+<p align="center">
+  <img src="https://github.com/Knotx/knotx-tutorials/blob/master/conferences/jug2017/img/knotx-flow.png?raw=true" alt="Knot.x flow"/>
+</p>
+
+
 On the same page you can see `Commodities` panel with natural resources and their current market value.
 This data comes from external REST `commodities` endpoint which is provided by Knot.x mocks in this example:
 - [http://localhost:3000/mock/service/commodities.json](http://localhost:3000/mock/service/commodities.json)
