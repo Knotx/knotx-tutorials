@@ -156,3 +156,19 @@ You should see a page with no changes to previous version. We still need to embe
 Place it instead of `<p>TODO</p>` just about line `351`.
 
 Refresh the page - you should see transactions from the Database.
+
+The code that is responsible for fetching the data from DB is in `TransactionsDbAdapterProxyImpl` 
+and its essence is this method:
+
+```java
+  @Override
+  protected Single<AdapterResponse> processRequest(AdapterRequest adapterRequest) {
+    final String query = adapterRequest.getParams().getString("query");
+    LOGGER.debug("Processing request with query: `{}`", query);
+    return client.rxGetConnection()
+        .flatMap(
+            sqlConnection -> sqlConnection.rxQuery(query)
+        )
+        .map(this::toAdapterResponse);
+  }
+```
