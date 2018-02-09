@@ -30,10 +30,11 @@
       <scope>provided</scope>
     </dependency>
 
+    <!-- custom adapter dependencies -->
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-jdbc-client</artifactId>
-      <version>3.5.0</version>
+      <version>${vertx.version}</version>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
