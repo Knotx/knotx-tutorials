@@ -20,11 +20,11 @@ import io.knotx.adapter.AbstractAdapterProxy;
 import io.knotx.dataobjects.AdapterRequest;
 import io.knotx.dataobjects.AdapterResponse;
 import io.knotx.dataobjects.ClientResponse;
+import io.reactivex.Single;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.json.JsonArray;
 import io.vertx.ext.sql.ResultSet;
-import io.vertx.rxjava.ext.jdbc.JDBCClient;
-import rx.Single;
+import io.vertx.reactivex.ext.jdbc.JDBCClient;
 
 public class ExampleServiceAdapterProxy extends AbstractAdapterProxy {
 
