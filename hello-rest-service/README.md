@@ -4,6 +4,6 @@ In this tutorial we create a page: [http://localhost:8092/html/books.html](http:
 We use [Knot.x](http://knotx.io) in order to dynamically inject list of books  returned by 
 [Googleapis books service](https://www.googleapis.com/books/v1/volumes?q=java).
 
-To run this tutorial download [knotx-standalone-1.0.1.fat.jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.0.1/knotx-standalone-1.0.1.fat.jar) 
+To run this tutorial download [knotx-standalone-1.2.0.fat.jar](https://oss.sonatype.org/content/groups/public/io/knotx/knotx-standalone/1.2.0/knotx-standalone-1.2.0.fat.jar) 
 to `app` folder in this tutorial root.
 Use `run.sh` to start Knot.x instance.
