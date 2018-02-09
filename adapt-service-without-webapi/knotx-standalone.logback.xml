@@ -25,4 +25,8 @@
     <appender-ref ref="CONSOLE"/>
     <appender-ref ref="FILE"/>
   </root>
+
+  <logger name="io.knotx.tutorial.adapter.example" level="TRACE" additivity="false">
+    <appender-ref ref="FILE"/>
+  </logger>
 </configuration>
