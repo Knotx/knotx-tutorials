@@ -20,13 +20,17 @@ import io.knotx.adapter.AbstractAdapterProxy;
 import io.knotx.dataobjects.AdapterRequest;
 import io.knotx.dataobjects.AdapterResponse;
 import io.knotx.dataobjects.ClientResponse;
+import io.reactivex.Single;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.json.JsonArray;
+import io.vertx.core.logging.Logger;
+import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.sql.ResultSet;
-import io.vertx.rxjava.ext.jdbc.JDBCClient;
-import rx.Single;
+import io.vertx.reactivex.ext.jdbc.JDBCClient;
 
 public class ExampleServiceAdapterProxy extends AbstractAdapterProxy {
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(ExampleServiceAdapterProxy.class);
 
   //we will need JDBC Client here to perform DB queries
   private final JDBCClient client;
@@ -38,6 +42,7 @@ public class ExampleServiceAdapterProxy extends AbstractAdapterProxy {
   @Override
   protected Single<AdapterResponse> processRequest(AdapterRequest adapterRequest) {
     final String query = adapterRequest.getParams().getString("query");
+    LOGGER.debug("Processing request with query: `{}`", query);
     return client.rxGetConnection()
         .flatMap(
             sqlConnection -> sqlConnection.rxQuery(query)

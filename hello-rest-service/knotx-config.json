@@ -1,12 +1,10 @@
 {
   "modules": [
     "knotx:io.knotx.KnotxServer",
-    "knotx:io.knotx.HttpRepositoryConnector",
     "knotx:io.knotx.FilesystemRepositoryConnector",
     "knotx:io.knotx.FragmentSplitter",
     "knotx:io.knotx.FragmentAssembler",
     "knotx:io.knotx.ServiceKnot",
-    "knotx:io.knotx.ActionKnot",
     "knotx:io.knotx.HandlebarsKnot",
     "knotx:io.knotx.HttpServiceAdapter"
   ],
@@ -14,12 +12,14 @@
     "knotx:io.knotx.KnotxServer": {
       "options": {
         "config": {
-          "repositories": [
-            {
-              "path": "/html/.*",
-              "address": "knotx.core.repository.filesystem"
-            }
-          ]
+          "defaultFlow": {
+            "repositories": [
+              {
+                "path": "/html/.*",
+                "address": "knotx.core.repository.filesystem"
+              }
+            ]
+          }
         }
       }
     },
